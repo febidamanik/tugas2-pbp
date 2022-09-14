@@ -8,9 +8,8 @@ Kelas : D
 Link aplikasi 🔗https://tugas2-pbp-febidamanik.herokuapp.com/katalog/
 
 # Bagan Request Client dan Response ke Aplikasi Django 
+![Mind Map](https://user-images.githubusercontent.com/112416751/190204981-98eb46ec-67f8-4044-a7af-16206f1a4042.jpg)
 
-
-Setiap request dari client akan diproses pertama
 # Penjelasan Bagan
 1. Setiap client yang mengakses Django akan dianggap sebagai bentuk permintaan oleh client sebelum masuk ke dalam Django
 2. Kemudian permintaan client akan diproses lebih lanjut melalui urls.py
