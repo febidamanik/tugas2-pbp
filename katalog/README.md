@@ -10,7 +10,7 @@ Link aplikasi 🔗https://tugas2-pbp-febidamanik.herokuapp.com/katalog/
 # ◻Bagan Request Client dan Response ke Aplikasi Django◻
 ![Bagan PBP](https://user-images.githubusercontent.com/112416751/190206240-52eed119-b548-4648-9bf1-e325ec75f591.jpg)
 
-# Penjelasan Bagan
+# ◻Penjelasan Bagan◻
 1. Setiap client yang mengakses Django akan dianggap sebagai bentuk permintaan oleh client sebelum masuk ke dalam Django
 2. Kemudian permintaan client akan diproses lebih lanjut melalui urls.py
 3. Pendefinisian alamat URL dan pendistribusian fungsi tiap route akan diatur di urls.py
@@ -20,7 +20,7 @@ Link aplikasi 🔗https://tugas2-pbp-febidamanik.herokuapp.com/katalog/
 7. Hasil dari proses tersebut akan ditampilkan dalam format HTML di templates hingga akhirnya halaman HTML dikembalikan ke Django untuk ditampilkan kepada client sebagai bentuk respons
 
 # 📌Mengapa kita menggunakan virtual environment?
-Virtual Environment digunakan untuk memastikan bahwa versi library dari suatu project tidak akan berubah apabila terdapat update di library yang sama untuk project lainnya. Dengan menggunakan virtual environment, dapat membuat dependencies yang berbeda-beda antara satu project dengan lainnya tanpa mengubah configurations pada operating systems yang dipakai. Pada saat program Python berjalan di dalam virtualenv terdapat modul-modul sendiri yang membuat program dari luar tidak bisa mengaksesnya. Dengan begitu, pembuatan environment pada aplikasi web berbasis Django berguna sebagai tools untuk menyimpan modulnya masing-masing. Tidak hanya Django, penggunaan tools virtualenv umumnya disarankan untuk digunakan saat membuat aplikasi versi Python. Contohnya, pada saat kita ingin mengakses folder project yang berbeda apabila environment dari kedua project dan versi dari Django tersebut berbeda kita masih bisa dapat menjalankan aplikasi dengan berbagai macam versi agar memiliki struktur direktori mandiri.
+Virtual Environment digunakan untuk memastikan bahwa versi library dari suatu project tidak akan berubah apabila terdapat update di library yang sama untuk project lainnya. Dengan menggunakan virtual environment, dapat membuat _dependencies_ yang berbeda-beda antara satu project dengan lainnya tanpa mengubah konfigurasi pada _operating systems_ yang dipakai. Pada saat program Python berjalan di dalam virtual environment terdapat modul-modul sendiri yang membuat program dari luar tidak bisa mengaksesnya. Dengan begitu, pembuatan environment pada aplikasi web berbasis Django berguna sebagai tools untuk menyimpan modulnya masing-masing. Tidak hanya Django, penggunaan tools virtualenv umumnya disarankan untuk digunakan saat membuat aplikasi versi Python. Contohnya, pada saat kita ingin mengakses folder project yang berbeda apabila environment dari kedua project dan versi dari Django tersebut berbeda kita masih bisa dapat menjalankan aplikasi dengan berbagai macam versi agar memiliki struktur direktori mandiri.
 
 
 # 📌Apakah kita tetap dapat membuat aplikasi web berbasis Django tanpa menggunakan virtual environment?
