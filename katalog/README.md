@@ -7,7 +7,7 @@ Kelas : D
 
 Link aplikasi 🔗https://tugas2-pbp-febidamanik.herokuapp.com/katalog/
 
-# ◻Bagan Request Client dan Response ke Aplikasi Django 
+# ◻Bagan Request Client dan Response ke Aplikasi Django◻
 ![Bagan PBP](https://user-images.githubusercontent.com/112416751/190206240-52eed119-b548-4648-9bf1-e325ec75f591.jpg)
 
 # Penjelasan Bagan
