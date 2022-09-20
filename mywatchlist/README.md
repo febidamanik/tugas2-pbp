@@ -6,7 +6,7 @@ NPM   : 2106751884
 
 Kelas : D
 
-[**pin🔗Link HTML**](https://tugas2-pbp-febidamanik.herokuapp.com/mywatchlist/html/)
+[**🔗Link HTML**](https://tugas2-pbp-febidamanik.herokuapp.com/mywatchlist/html/)
 
 [**🔗Link JSON**](https://tugas2-pbp-febidamanik.herokuapp.com/mywatchlist/json/)
 
