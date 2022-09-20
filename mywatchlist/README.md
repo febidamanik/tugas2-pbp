@@ -14,6 +14,7 @@ Kelas : D
 
 # 🔍Perbedaan JSON, XML, dan HTML🔍
 ▫ JSON (JavaScript Object Notation) merupakan sebuah format yang menerjemahkan bahasa pemrograman digunakan dalam transfer dan penyimpanan data serta menukar informasi dari web server sehingga dapat ditampilkan pada halaman web.
+
 Contoh: 
 ```
 {
@@ -22,6 +23,7 @@ Contoh:
 }
 ```
 ▫ XML (Extensible Markup Language) merupakan bahasa markup yang menyederhanakan proses pertukaran dan penyimpanan data dari suatu aplikasi ke aplikasi lain melalui internet.
+
 Contoh: 
 ```<?xml version="1.0"?>
 <kartuNama>
@@ -29,6 +31,7 @@ Contoh:
 </kartuNama>
 ```
 ▫ HTML (Hypertext Markup Language) merupakan bahasa markup standar yang digunakan untuk membuat serta menampilkan data pada halaman website dan aplikasi web.
+
 Contoh: 
 ```<p>The HTML <code>button</code> tag defines a clickable button.</p>```
 
