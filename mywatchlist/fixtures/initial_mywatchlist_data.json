@@ -26,7 +26,7 @@
     "model": "mywatchlist.mywatchlist",
     "pk": 5,
     "fields":{
-        "watched": false,
+        "watched": true,
         "title":"Cinderella",
         "rating": 4,
         "release_date": "2015-03-11",

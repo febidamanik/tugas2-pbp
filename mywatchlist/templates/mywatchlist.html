@@ -2,11 +2,10 @@
 
  {% block content %}
 
-
-  <h1 style="text-align: center; color: #013f78"><span>🎦</span>My Watch List<span>🎦</span></h1>
-  <h1 style="text-align: center; color: #013f78"><span>==========================</span></h1>
-  <h3 style="text-align: left; color: #00294f">Name:         {{nama}}</h3>
-  <h3 style="text-align: left; color: #00294f">Student ID: {{npm}}</h3>
+  <body style="background-color:#000000">
+  <h1 style="text-align: center; color: #7992ba"><span>🎦</span>My Watch List<span>🎦</span></h1>
+  <h3 style="text-align: center; color: #d8e3f2">💁‍♀️Name: {{nama}} || 🔖Student ID: {{npm}}</h3>
+  <h1 style="text-align: center; color: #d8e3f2;"><span>===========================================</span></h1>
 
 
   <table rules="all", border="5", table align="center">
@@ -15,7 +14,7 @@
         <th bgcolor="#8cc5fa">Title</th>
         <th colspan="2", bgcolor="#8cc5fa">Release Date</th>
         <th colspan="2", bgcolor="#8cc5fa">Rating (*/5)</th>
-        <th bgcolor="#8cc5fa", colspan="2">Review</th>
+        <th bgcolor="#8cc5fa", colspan="2", fontface="calibri">Review</th>
         
     </tr>
     {% for movie in watchlist %}
@@ -30,5 +29,5 @@
     {% endfor %}
   </table>
 
-  <h1 style="color:#013f78; text-align: center;"><span></span>{{message}}</h1>
+  <h1 style="color:#d8e3f2; text-align: center;"><span></span>{{message}}</h1>
  {% endblock content %}
