@@ -78,7 +78,8 @@ python manage.py makemigrations
         "review":"This movie has a beautifully animated and boasts some standout talent"
 
     }
-},...```
+},...
+```
 ▫ Membuat fungsi 'show_mywatchlist', 'show_mywatchlist_json', dan 'show_mywatchlist_xml'. 
 ▫ Menambahkan potongan kode untuk melakukan loaddata pada fixtures dari aplikasi mywatchlist yang akhirnya di-deply ke Herokuapp.
 
