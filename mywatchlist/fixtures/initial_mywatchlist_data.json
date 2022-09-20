@@ -38,9 +38,9 @@
     "pk": 3,
     "fields":{
         "watched": true,
-        "title":"Minions: The Rise of Gru",
+        "title":"Minions",
         "rating": 4,
-        "release_date": "2022-06-28",
+        "release_date": "2015-06-17",
         "review":"This movie has a more Minion compilation than Gru prequel"
     }
 },
