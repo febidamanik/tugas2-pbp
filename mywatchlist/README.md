@@ -85,11 +85,14 @@ python manage.py makemigrations
 
 # 🖨Hasil Screenshot Postman🖨
 ▫ **HTML**
+
 ![image](https://user-images.githubusercontent.com/112416751/191333281-ff9936ef-9a85-4eb2-8cea-76ba6c581637.png)
 
 ▫ **JSON**
+
 ![image](https://user-images.githubusercontent.com/112416751/191333476-d0fb8bce-bd05-4403-a32c-c9ec7e1fb4ea.png)
 
 ▫ **XML**
+
 ![image](https://user-images.githubusercontent.com/112416751/191334092-cf04cd55-9a01-479c-8a63-c7766c9358d3.png)
 
