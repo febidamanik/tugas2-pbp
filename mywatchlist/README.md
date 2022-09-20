@@ -26,9 +26,9 @@ Contoh:
 
 Contoh: 
 ```<?xml version="1.0"?>
-<kartuNama>
-    <nama>
-</kartuNama>
+<lisFilm>
+    <film>
+</listFilm>
 ```
 ▫ HTML (Hypertext Markup Language) merupakan bahasa markup standar yang digunakan untuk membuat serta menampilkan data pada halaman website dan aplikasi web.
 
