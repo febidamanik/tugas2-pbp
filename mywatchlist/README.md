@@ -34,14 +34,14 @@ Contoh:
 
 Contoh: 
 ```
-  <h3 style="text-align: left; color: #00294f">Name:  {{nama}}</h3>
+  <h3 style="text-align: left; color: #00294f">Name: {{nama}}</h3>
 ```
 
 # 📩Mengapa perlu Data delivery?📩
 Perubahan data yang dinamis membuat aplikasi membutuhkan cara bagaimana agar dapat menyimpan data dari user ke dalam database dengan cepat. Hal ini dapat dilakukan dengan pemrosesan data secara masif sehingga diperlukan HTTP Protocols yang akan membantu developer melakukan pengiriman data dengan menggunakan method, seperti get, post, patch, dan delete. Dengan begitu, pentingnya data perantara untuk pertukaran data, seperti JSON dan XML. Melalui perantara ini, akan memudahkan user dan server dalam pengambilan data ke bagian backend dengan cepat. Dengan HTTP Protocols akan membantu developer untuk melakukan pengiriman data untuk menerima perintah dari suatu frontend tentang pemrosesan suatu data.
 
 # 📌Pengimplementasian checklists dari tasks📌
-▫ Membuat django-app dengan 'startnewapp', kemudian tugas 2 diberi nama mywatchlist.
+▫ Membuat django-app dengan 'startnewapp' kemudian tugas 2 diberi nama mywatchlist.
 
 ▫ Menambahkan path aplikasi mywatchlist ke dalam 'urls.py' di project_django dan mywatchlist.
 
