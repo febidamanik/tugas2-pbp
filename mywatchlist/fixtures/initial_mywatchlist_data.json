@@ -1,0 +1,114 @@
+[
+    {
+    "model": "mywatchlist.mywatchlist",
+    "pk": 4,
+    "fields":{
+        "watched": false,
+        "title":"Despicable Me",
+        "rating": 7.6,
+        "release_date": "2010-07-09",
+        "review":"This movie has a beautifully animated and boasts some standout talent"
+
+    }
+},
+{
+    "model": "mywatchlist.mywatchlist",
+    "pk": 2,
+    "fields":{
+        "watched": false,
+        "title":"Despicable Me 3",
+        "rating": 5,
+        "release_date": "2017-07-12",
+        "review":"This movie has a perfect beland of reality and humor"
+    }
+},
+{
+    "model": "mywatchlist.mywatchlist",
+    "pk": 5,
+    "fields":{
+        "watched": false,
+        "title":"Cinderella",
+        "rating": 8,
+        "release_date": "2015-03-11",
+        "review":"This movie has a high quality and modern faithful telling of the classic talent"
+    }
+},
+{
+    "model": "mywatchlist.mywatchlist",
+    "pk": 3,
+    "fields":{
+        "watched": true,
+        "title":"Minions: The Rise of Gru",
+        "rating": 7,
+        "release_date": "2022-06-28",
+        "review":"This movie has a more Minion compilation than Gru prequel"
+    }
+},
+{
+    "model": "mywatchlist.mywatchlist",
+    "pk": 1,
+    "fields":{
+        "watched": true,
+        "title":"The Lion King",
+        "rating": 8.5,
+        "release_date": "1994-06-12",
+        "review":"This movie has a great issues and involves a huge conflict for the main character"
+
+    }
+},
+{
+    "model": "mywatchlist.mywatchlist",
+    "pk": 6,
+    "fields":{
+        "watched": true,
+        "title":"The Fault In Our Stars",
+        "rating": 7.7,
+        "release_date": "2014-08-22",
+        "review":"This movie has enough charm and humor to keep it appealing to a wide audience"
+    }
+},
+{
+    "model": "mywatchlist.mywatchlist",
+    "pk": 7,
+    "fields":{
+        "watched": true,
+        "title":"Aladdin",
+        "rating": 3,
+        "release_date": "2019-05-24",
+        "review":"This is a great drama musical movie"
+    }
+},
+{
+    "model": "mywatchlist.mywatchlist",
+    "pk": 8,
+    "fields":{
+        "watched": false,
+        "title":"Avengers: Endgame",
+        "rating": 9,
+        "release_date": "2019-04-24",
+        "review":"This movie has a terrific example of that epic intimacy that Marvel does so well-alternating between glorious action"
+    }
+},
+{
+    "model": "mywatchlist.mywatchlist",
+    "pk": 9,
+    "fields":{
+        "watched": true,
+        "title":"Frozen",
+        "rating": 7.4,
+        "release_date": "2019-05-24",
+        "review":"This movie has a kids and adults were in love with the story and loveable characters"
+    }
+},
+{
+    "model": "mywatchlist.mywatchlist",
+    "pk": 10,
+    "fields":{
+        "watched": false,
+        "title":"Moana",
+        "rating": 8,
+        "release_date": "2016-11-25",
+        "review":"This movie has a dazzling visuals and enjoyable performances"
+    }
+}
+]
