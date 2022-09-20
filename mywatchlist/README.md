@@ -42,21 +42,51 @@ Perubahan data yang dinamis membuat aplikasi membutuhkan cara bagaimana agar dap
 
 # 📌Pengimplementasian checklists dari tasks📌
 ▫ Membuat django-app dengan 'startnewapp' kemudian tugas 2 diberi nama mywatchlist.
-
+```
+python manage.py startapp wishlist
+```
 ▫ Menambahkan path aplikasi mywatchlist ke dalam 'urls.py' di project_django dan mywatchlist.
-
+```
+urlpatterns = [
+    ...
+    path('mywatchlist/', include('mywatchlist.urls')),
+]
+```
 ▫ Membuat models dengan properti 'watched', 'title', 'rating', 'release_date', dan 'review'.
-
+```
+class MyWatchList(models.Model):
+    watched = models.BooleanField() 
+    title = models.TextField()
+    rating = models.IntegerField()
+    release_date = models.DateField()
+    review = models.TextField()
+```
 ▫ Menyiapkan migrasi skema model ke dalam database Django lokal.
-
+```
+python manage.py makemigrations
+```
 ▫ Membuat folder fixtures berisi file json yang di dalamnya memuat daftar film dilanjutkan dengan melakukan loaddata untuk menyimpan isinya ke database.
+```[
+    {
+    "model": "mywatchlist.mywatchlist",
+    "pk": 4,
+    "fields":{
+        "watched": false,
+        "title":"Despicable Me",
+        "rating": 4,
+        "release_date": "2010-07-09",
+        "review":"This movie has a beautifully animated and boasts some standout talent"
 
+    }
+},...
+```
 ▫ Membuat fungsi 'show_mywatchlist', 'show_mywatchlist_json', dan 'show_mywatchlist_xml'. 
-
 ▫ Menambahkan potongan kode untuk melakukan loaddata pada fixtures dari aplikasi mywatchlist yang akhirnya di-deply ke Herokuapp.
 
-# 💻Hasil Screenshot Postman💻
-▫ 
-▫ 
-▫ 
+# 🖨Hasil Screenshot Postman🖨
+▫ HTML
+
+▫ JSON
+
+▫ XML
 
