@@ -33,8 +33,8 @@ Contoh:
 ▫ HTML (Hypertext Markup Language) merupakan bahasa markup standar yang digunakan untuk membuat serta menampilkan data pada halaman website dan aplikasi web.
 
 Contoh: 
-```<p>The HTML <code>button</code> tag defines a clickable button.</p>
-
+```
+  <h3 style="text-align: left; color: #00294f">Name:  {{nama}}</h3>
 ```
 
 # 📩Mengapa perlu Data delivery?📩
