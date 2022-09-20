@@ -17,7 +17,7 @@ Kelas : D
 
 ▫ XML (Extensible Markup Language) merupakan bahasa markup yang menyederhanakan proses pertukaran dan penyimpanan data dari suatu aplikasi ke aplikasi lain melalui internet.
 
-▫ HTML (Hypertext Markup Language) merupakan bahasa markup standar untuk membuat serta menampilkan data pada halaman website dan aplikasi web.
+▫ HTML (Hypertext Markup Language) merupakan bahasa markup standar yang digunakan untuk membuat serta menampilkan data pada halaman website dan aplikasi web.
 
 
 # 📩Mengapa perlu Data delivery?📩
