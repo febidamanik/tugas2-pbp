@@ -13,7 +13,7 @@ Kelas : D
 [**🔗Link XML**](https://tugas2-pbp-febidamanik.herokuapp.com/mywatchlist/xml/)
 
 # 🔍Perbedaan JSON, XML, dan HTML🔍
-▫ JSON (JavaScript Object Notation) merupakan sebuah format yang menerjemahkan bahasa pemrograman digunakan dalam transfer dan penyimpanan data serta menukar informasi dari web server sehingga dapat ditampilkan pada halaman web.
+▫ JSON (JavaScript Object Notation) merupakan sebuah format berbasis notasi objek dalam Javascript yang menerjemahkan bahasa pemrograman digunakan dalam transfer dan penyimpanan data serta menukar informasi dari web server sehingga dapat ditampilkan pada halaman web.
 
 Contoh: 
 ```
