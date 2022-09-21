@@ -3,7 +3,7 @@
     "model": "mywatchlist.mywatchlist",
     "pk": 4,
     "fields":{
-        "watched": false,
+        "watched": true,
         "title":"Despicable Me",
         "rating": 4,
         "release_date": "2010-07-09",
@@ -15,7 +15,7 @@
     "model": "mywatchlist.mywatchlist",
     "pk": 2,
     "fields":{
-        "watched": false,
+        "watched": true,
         "title":"Despicable Me 3",
         "rating": 5,
         "release_date": "2017-07-12",
