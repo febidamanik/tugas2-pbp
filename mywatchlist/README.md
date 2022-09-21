@@ -55,10 +55,10 @@ Contoh:
 ```
 
 # 📩Mengapa perlu Data delivery?📩
-Perubahan data yang dinamis membuat aplikasi membutuhkan cara bagaimana agar dapat menyimpan data dari user ke dalam database dengan cepat. Hal ini dapat dilakukan dengan pemrosesan data secara masif sehingga diperlukan HTTP Protocols yang akan membantu developer melakukan pengiriman data dengan menggunakan method, seperti get, post, patch, dan delete. Dengan begitu, pentingnya data perantara untuk pertukaran data, seperti JSON dan XML. Melalui perantara ini, akan memudahkan user dan server dalam pengambilan data ke bagian backend dengan cepat. Dengan HTTP Protocols akan membantu developer untuk melakukan pengiriman data untuk menerima perintah dari suatu frontend tentang pemrosesan suatu data.
+Perubahan data yang dinamis membuat aplikasi membutuhkan cara bagaimana agar dapat menyimpan data dari user ke dalam database dengan cepat. Hal ini dapat dilakukan dengan pemrosesan data secara masif sehingga diperlukan data delivery yang akan menjadi mengambil data yang diperoleh dari database kemudian ditampilkan di sisi server situs atau aplikasi. Kemudian akan dibantu dengan HTTP Protocols yang akan membantu developer melakukan pengiriman data dengan menggunakan method, seperti get, post, patch, dan delete. Dengan begitu, pentingnya data perantara untuk pertukaran data, seperti JSON dan XML. Melalui perantara ini, akan memudahkan user dan server dalam pengambilan data ke bagian backend dengan cepat. Dengan HTTP Protocols akan membantu developer untuk melakukan pengiriman data untuk menerima perintah dari suatu frontend yang berkaitan dengan data delivery.
 
 # 📌Pengimplementasian checklists dari tasks📌
-▫ Membuat django-app dengan 'startnewapp' kemudian tugas 2 diberi nama mywatchlist.
+▫ Membuat django-app dengan 'startnewapp' diberi nama mywatchlist dengan command berikut.
 ```
 python manage.py startapp wishlist
 ```
@@ -98,7 +98,7 @@ python manage.py makemigrations
 },...
 ```
 ▫ Membuat fungsi 'show_mywatchlist', 'show_mywatchlist_json', dan 'show_mywatchlist_xml'. 
-▫ Menambahkan potongan kode untuk melakukan loaddata pada fixtures dari aplikasi mywatchlist yang akhirnya di-deply ke Herokuapp.
+▫ Menambahkan potongan kode untuk melakukan loaddata pada fixtures dari aplikasi mywatchlist yang akhirnya di-deploy ke Herokuapp.
 
 # 🖨Hasil Screenshot Postman🖨
 ▫ **HTML**
