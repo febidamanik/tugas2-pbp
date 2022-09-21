@@ -6,7 +6,7 @@ NPM	: 2106751884
 
 Kelas 	: D
 
-# Link
+# 🔗Link🔗
 <!DOCTYPE html>
 <html>
 <head>
@@ -15,14 +15,14 @@ Kelas 	: D
 <body>
  <table>
  	<tr>
- 		<td>🔗Link HTML</td>
+ 		<td>Link HTML</td>
  		<td>https://tugas2-pbp-febidamanik.herokuapp.com/mywatchlist/html/</td>
  	</tr>
  	<tr>
- 		<td>🔗Link JSON</td>
+ 		<td>Link JSON</td>
  		<td>https://tugas2-pbp-febidamanik.herokuapp.com/mywatchlist/json/</td>
   	<tr>
-   	<td>🔗Link XML</td>
+   	<td>Link XML</td>
     <td>https://tugas2-pbp-febidamanik.herokuapp.com/mywatchlist/xml/</td>
    </tr>
  </table>
