@@ -6,11 +6,28 @@ NPM   : 2106751884
 
 Kelas : D
 
-[**🔗Link HTML**](https://tugas2-pbp-febidamanik.herokuapp.com/mywatchlist/html/)
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+ <table>
+ 	<tr>
+ 		<td>🔗Link HTML</td>
+ 		<td>https://tugas2-pbp-febidamanik.herokuapp.com/mywatchlist/html/</td>
+ 	</tr>
+ 	<tr>
+ 		<td>🔗Link JSON</td>
+ 		<td>https://tugas2-pbp-febidamanik.herokuapp.com/mywatchlist/json/</td>
+  	<tr>
+   	<td>🔗Link XML</td>
+    <td>https://tugas2-pbp-febidamanik.herokuapp.com/mywatchlist/xml/</td>
+   </tr>
+ </table>
 
-[**🔗Link JSON**](https://tugas2-pbp-febidamanik.herokuapp.com/mywatchlist/json/)
-
-[**🔗Link XML**](https://tugas2-pbp-febidamanik.herokuapp.com/mywatchlist/xml/)
+</body>
+</html>
 
 # 🔍Perbedaan JSON, XML, dan HTML🔍
 ▫ JSON (JavaScript Object Notation) merupakan sebuah format berbasis notasi objek dalam Javascript yang menerjemahkan bahasa pemrograman digunakan dalam transfer dan penyimpanan data serta menukar informasi dari web server sehingga dapat ditampilkan pada halaman web.
