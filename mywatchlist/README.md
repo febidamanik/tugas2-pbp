@@ -99,7 +99,62 @@ python manage.py makemigrations
 },...
 ```
 ▫ Membuat fungsi 'show_mywatchlist', 'show_mywatchlist_json', dan 'show_mywatchlist_xml'. 
-▫ Menambahkan potongan kode untuk melakukan loaddata pada fixtures dari aplikasi mywatchlist yang akhirnya di-deploy ke Herokuapp.
+
+▫ HTML
+
+```
+def show_mywatchlist(request):
+    mywatchlist = MyWatchList.objects.all()
+    
+    watched = MyWatchList.objects.filter(watched=True).count()
+    unwatched = MyWatchList.objects.filter(watched=False).count()
+
+    message = ""
+
+    # menampilkan pesan 
+    if watched >= unwatched:
+        message = "Selamat, kamu sudah banyak menonton!"
+    else:
+        message = "Wah, kamu masih sedikit menonton!"
+
+    context = {
+        "watchlist": mywatchlist,
+        "message": message,
+        "nama": 'Febi Claudia Damanik',
+        "npm": "2106751884"
+    }
+    return render(request, 'mywatchlist.html', context)
+```
+▫ JSON
+
+```
+def show_mywatchlist_json(request):
+    mywatchlist = MyWatchList.objects.all()
+    return HttpResponse(serializers.serialize("json", mywatchlist), content_type="application/json")
+```
+▫ XML
+
+```
+def show_mywatchlist_xml(request):
+    mywatchlist = MyWatchList.objects.all()
+    return HttpResponse(serializers.serialize("xml", mywatchlist), content_type="application/xml")
+```
+▫ Membuat routing untuk melakukan loaddata pada fixtures dari aplikasi mywatchlist yang akhirnya di-deploy ke Herokuapp.
+
+```
+from django.urls import path
+from mywatchlist.views import show_mywatchlist, show_mywatchlist_json, show_mywatchlist_xml
+
+app_name = 'mywatchlist'
+
+urlpatterns = [
+    path('', show_mywatchlist, name='show_mywatchlist'),
+    path('html/', show_mywatchlist, name='show_mywatchlist'),
+    path('json/', show_mywatchlist_json, name='show_mywatchlist_json'),
+    path('xml/', show_mywatchlist_xml, name='show_mywatchlist_xml'),
+]
+```
+
 
 # 🖨Hasil Screenshot Postman🖨
 ▫ **HTML**
