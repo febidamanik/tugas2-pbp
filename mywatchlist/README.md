@@ -1,10 +1,10 @@
 # 📑TUGAS-3 PBP📑
 
-Nama  : Febi Claudia Damanik
+Nama  	: Febi Claudia Damanik
 
-NPM   : 2106751884
+NPM	: 2106751884
 
-Kelas : D
+Kelas 	: D
 
 <!DOCTYPE html>
 <html>
