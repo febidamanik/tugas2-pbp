@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% block meta %}
+
+<style>
+    body{
+        background-color:#000000
+ }
+    .card-body {
+            width:500px;
+            margin: 60px auto;
+            padding:20px;
+            background-color: #fff;
+            border-radius: 3px;
+            box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);;
+    }
+    table {
+        border-collapse: collapse;
+        background: #f5f7ff;
+        border-radius: 10px;
+        overflow: hidden;
+        width: 100%;
+        margin: 0 auto;
+        border-width: 5px;
+    }
+
+    tr {
+        height: 50px;
+    }
+
+    td{
+        padding-left: 8px;
+        font-family: Tahoma, sans-serif;
+        font-size: 14px;
+    }
+
+    h1 {
+        padding: 10px;
+        font-family: monospace,"1";
+        text-align-last: center;
+    }
+
+    a,p {
+        color: rgb(0, 0, 0);
+        font-family: 'calibri', sans-serif;
+    }
+
+    .button {
+        border: 0px;
+        background-color: #6e81b1;
+        color: rgb(0, 0, 0);
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        cursor: pointer;
+        justify-content: center;
+        text-align: center;
+        box-shadow: 3px 1px 10px 0px rgba(0,0,0,0.30);
+    }
+
+</style>
+
+<title>Login</title>
+{% endblock meta %}
+
+{% block content %}
+
+<div class = "login">
+
+    <div class="card-body">
+    <h1>Login</h1>
+
+    <form method="POST" action="">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>Nama pengguna</td>
+                <td><input type="text" name="username" placeholder="Username" class="form-control"></td>
+            </tr>
+                    
+            <tr>
+                <td>Kata sandi</td>
+                <td><input type="password" name="password" placeholder="Password" class="form-control"></td>
+            </tr>
+
+            <tr>
+                <td><input class="button" type="submit" value="🟢Masuk"></td>
+            </tr>
+        </table>
+    </form>
+    Belum mempunyai akun? <a href="{% url 'todolist:registrasi_user' %}">Buat Akun</a>
+
+</div>
+
+{% endblock content %}
