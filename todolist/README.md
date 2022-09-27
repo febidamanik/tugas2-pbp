@@ -37,10 +37,16 @@ Kelas 	: D
 
 # 🔐Peran penting {% csrf_token %} pada elemen <form>🔐
 	
-# ❓Apakah kita dapat membuat elemen <form> secara manual (tanpa menggunakan generator seperti {{ form.as_table }}) ❓
+	
+	
+	
+# Apakah kita dapat membuat elemen <form> secara manual (tanpa menggunakan generator seperti {{ form.as_table }}) ❓
 	
 # ⚒Gambaran besar cara membuat <form> secara manual⚒
 	
-# Proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML
+# ◽Proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML◽
 
+	
+	
+	
 # 📌Pengimplementasian checklists dari tasks📌
