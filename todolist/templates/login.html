@@ -1,4 +1,5 @@
 {% extends 'base.html' %}
+
 {% block meta %}
 
 <style>
@@ -22,28 +23,23 @@
         margin: 0 auto;
         border-width: 5px;
     }
-
     tr {
         height: 50px;
     }
-
     td{
         padding-left: 8px;
         font-family: Tahoma, sans-serif;
         font-size: 14px;
     }
-
     h1 {
         padding: 10px;
         font-family: monospace,"1";
         text-align-last: center;
     }
-
     a,p {
         color: rgb(0, 0, 0);
         font-family: 'calibri', sans-serif;
     }
-
     .button {
         border: 0px;
         background-color: #6e81b1;
@@ -58,8 +54,8 @@
     }
 
 </style>
-
 <title>Login</title>
+
 {% endblock meta %}
 
 {% block content %}
@@ -87,8 +83,17 @@
             </tr>
         </table>
     </form>
-    Belum mempunyai akun? <a href="{% url 'todolist:registrasi_user' %}">Buat Akun</a>
 
+    {% if messages %}
+        <ul>
+            {% for message in messages %}
+                <li>{{ message }}</li>
+            {% endfor %}
+        </ul>
+    {% endif %}
+
+    <p>Belum mempunyai akun? <b><a href="{% url 'todolist:registrasi_user' %}">Buat Akun</a></b></p>
+    </div>
 </div>
 
 {% endblock content %}
