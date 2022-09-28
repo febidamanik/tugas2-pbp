@@ -47,7 +47,7 @@ Berikut gambaran besar cara membuat `<form>` secara manual, yaitu:
 - Kemudian ditambahkan dengan atribut `action` dan `method` agar dapat berfungsi sebagaimana mestinya. Action berupa alamat dari halaman PHP untuk mengirimkan data form sedangkan method berupa GET/POST untuk menjelaskan data isian form yang akan dikirim ke web browser
 - Selanjutnya menambahkan tag <input> yang terdapat atribut `name="<nama-variable>"` sehingga diperoleh input berupa data dari user oleh views.py dengan memanggil perintah HTTP Request
 
-# ◽Proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML◽
+# 🔽Proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML🔽
 
 	
 	
