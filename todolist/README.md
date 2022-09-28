@@ -56,7 +56,7 @@ Berikut gambaran besar cara membuat `<form>` secara manual, yaitu:
 - Dibuat object Task baru yang akan menyimpan variabel judul dan deskripsi kemudian disimpan ke dalam database kemudian dengan menggunakan perintah <object>.save().
 - Dengan menggunakan perintah `tasks = Task.objects.filter(user_id=user_id)` pada fungsi main, yaitu show_todolist akan didapatkan objek yang merupakan bagian dari objek Task sesuai dengan kepemilikan masing-masing user.
 - Untuk menampilkan objek Task secara keseluruhan pada template HTML maka dijalankan dengan menggunakan perintah render.
-- Dilakuan iterasi pada todolist untuk menampilkan satu kesatuan tabel pada template HTML yang formatnya disesuaikan dengan format pengaturan HTML.
+- Dilakukan iterasi pada todolist untuk menampilkan satu kesatuan tabel pada template HTML yang formatnya disesuaikan dengan format pengaturan HTML.
 	
 # 📌Pengimplementasian checklists dari tasks📌
 - Membuat django-app dengan 'startnewapp' diberi nama todolist dengan command berikut.
