@@ -124,8 +124,17 @@ plus
 ```	
 **◻Tambahan Implementasi Bonus◻**
 - Membuat dua akun pengguna beserta tiga dummy data menggunakan model Task di situs web dimana terdapat tambahan kolom untuk tombol yang akan melakukan behavior yang diinginkan, yaitu mengubah status serta tambahan kolom untuk menghapus suatu task.
+- Memperbarui status penyelesaian task dan tombol pengubahan status pada todolist.html
 ```
-is_finished = models.BooleanField(default=False)
+<a href="/todolist/update/{{task.id}}">
+	<button class="button2" type="submit">Perbarui Status🔄</button>
+</a>
+```
+- Menghapus suatu task todolist.html
+```
+<a href="/todolist/delete/{{task.id}}">
+	<button class="button2" type="submit">Hapus❌</button>
+</a>
 ```
 
  
