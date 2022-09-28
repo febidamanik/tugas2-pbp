@@ -111,6 +111,12 @@ urlpatterns = [
 ```
 - Melakukan deployment aplikasi Django pada Heroku menggunakan repository yang sama dari GitHub dengan Tugas 2 untuk memberikan perubahan pada repository sehingga nantinya dapat diakses melalui Internet jika sudah berhasil kita dapat mengakses link proyek aplikasi.
 plus
-	
+```	git add .
+	git commit -m "some commit message"
+	git push origin <the branch name>
+```	
 **◽Tambahan Implementasi Bonus◽**
 - Membuat dua akun pengguna berserta tiga dummy data menggunakan model Task di situs web dimana terdapat tambahan kolom untuk tombol yang akan melakukan behavior yang diinginkan, yaitu mengubah status serta tambahan kolom untuk menghapus suatu task.
+```
+is_finished = models.BooleanField(default=False)
+```
