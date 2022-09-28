@@ -12,7 +12,7 @@ Kelas 	: D
 <head>
 	<meta charset="utf-8">
 </head>
-<body>
+<body> 
  <table>
  	<tr>
  		<td>Halaman Utama</td>
