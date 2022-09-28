@@ -52,11 +52,11 @@ Berikut gambaran besar cara membuat `<form>` secara manual, yaitu:
 # 🔽Proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML🔽
 - User memberikan input pada form HTML yang berdasarkan isian yang diminta oleh form.
 - Pada views.py terdapat fungsi yang akan menerima input user di HTML.
-- Dengan menggunakan perintah `request.POST.get("<name>")` akan disimpan dengan menyimpan ke dalam suatu variabel.
-- Dibuat object Task baru yang akan menyimpan variabel judul dan deskripsi kemudian disimpan ke dalam database kemudian dengan menggunakan perintah <object>.save()
-- Pada fungsi main, yaitu show_todolist akan didapatkan objek yang merupakan bagian dari objek Task sesuai dengan kepemilikan masing-masing.
-- Dengan menggunakan perintah `tasks = Task.objects.filter(user_id=user_id)` akan ddi hasil pemrosesan ke template HTML sebagai bentuk responsnya.
-- Terdapat iterasi dari pengimplementasian todolist pada template HTML yang kemudian akan ditampilkan sebagai satu kesatuan tabel yang dimana pengaturan HTML disesuaikan dengan format yang telah diinginkkan.
+- Dengan menggunakan perintah `request.POST.get("<name>")` , data inpu akan disimpan ke dalam suatu variabel.
+- Dibuat object Task baru yang akan menyimpan variabel judul dan deskripsi kemudian disimpan ke dalam database kemudian dengan menggunakan perintah <object>.save().
+- Dengan menggunakan perintah `tasks = Task.objects.filter(user_id=user_id)` pada fungsi main, yaitu show_todolist akan didapatkan objek yang merupakan bagian dari objek Task sesuai dengan kepemilikan masing-masing user.
+- Untuk menampilkan objek Task secara keseluruhan pada template HTML maka dijalankan dengan menggunakan perintah render.
+- Dilakuan iterasi pada todolist untuk menampilkan satu kesatuan tabel pada template HTML yang formatnya disesuaikan dengan format pengaturan HTML.
 	
 # 📌Pengimplementasian checklists dari tasks📌
 - Membuat django-app dengan 'startnewapp' diberi nama todolist dengan command berikut.
@@ -127,4 +127,5 @@ plus
 ```
 is_finished = models.BooleanField(default=False)
 ```
+
  
