@@ -115,7 +115,7 @@ plus
 	git commit -m "some commit message"
 	git push origin <the branch name>
 ```	
-**◽Tambahan Implementasi Bonus◽**
+**◻Tambahan Implementasi Bonus◻**
 - Membuat dua akun pengguna berserta tiga dummy data menggunakan model Task di situs web dimana terdapat tambahan kolom untuk tombol yang akan melakukan behavior yang diinginkan, yaitu mengubah status serta tambahan kolom untuk menghapus suatu task.
 ```
 is_finished = models.BooleanField(default=False)
