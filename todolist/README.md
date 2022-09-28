@@ -73,7 +73,9 @@ urlpatterns = [
     is_finished = models.BooleanField(default=False)
 ```
 - Membuat form registrasi dalam views.py di todolist.
-```    form = UserCreationForm()
+```  
+	form = UserCreationForm()
+	
 ```
 - Membuat fungsi berupa form login dan logout dengan method POST
 ```
