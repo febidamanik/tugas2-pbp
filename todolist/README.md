@@ -73,7 +73,7 @@ urlpatterns = [
 - Membuat task class serta atribut data `user`, `date`, `title`, `description`, dan `is_finished` 
 ```
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    date = models.DateField()
+    date = models.DateField() 
     title = models.CharField(max_length=150)
     description = models.TextField()
     is_finished = models.BooleanField(default=False)
