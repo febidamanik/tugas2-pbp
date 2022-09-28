@@ -75,7 +75,6 @@ urlpatterns = [
 - Membuat form registrasi dalam views.py di todolist.
 ```  
 	form = UserCreationForm()
-	
 ```
 - Membuat fungsi berupa form login dan logout dengan method POST
 ```
