@@ -124,6 +124,9 @@ plus
 ```	
 **◻Tambahan Implementasi Bonus◻**
 - Membuat dua akun pengguna beserta tiga dummy data menggunakan model Task di situs web dimana terdapat tambahan kolom untuk tombol yang akan melakukan behavior yang diinginkan, yaitu mengubah status serta tambahan kolom untuk menghapus suatu task.
+![image](https://user-images.githubusercontent.com/112416751/192825790-658c8b5b-7cce-4d2f-82be-b2a06fff59c7.png)
+![image](https://user-images.githubusercontent.com/112416751/192826306-86681ba8-99e4-4850-81fa-5b4065087915.png)
+
 - Memperbarui status penyelesaian task dan tombol pengubahan status pada todolist.html
 ```
 <a href="/todolist/update/{{task.id}}">
