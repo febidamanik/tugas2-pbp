@@ -50,8 +50,13 @@ Berikut gambaran besar cara membuat `<form>` secara manual, yaitu:
 - Selanjutnya menambahkan tag <input> yang terdapat atribut `name="<nama-variable>"` sehingga diperoleh input berupa data dari user oleh views.py dengan memanggil perintah HTTP Request
 
 # 🔽Proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML🔽
-w a i t
-	
+- User memberikan input pada form HTML yang berdasarkan isian yang diminta oleh form.
+- Pada views.py terdapat fungsi yang akan menerima input user di HTML.
+- Dengan menggunakan perintah `request.POST.get("<name>")` akan disimpan dengan menyimpan ke dalam suatu variabel.
+- Dibuat object Task baru yang akan menyimpan variabel judul dan deskripsi kemudian disimpan ke dalam database kemudian dengan menggunakan perintah <object>.save()
+- Pada fungsi main, yaitu show_todolist akan didapatkan objek yang merupakan bagian dari objek Task sesuai dengan kepemilikan masing-masing.
+- Dengan menggunakan perintah `tasks = Task.objects.filter(user_id=user_id)` akan ddi hasil pemrosesan ke template HTML sebagai bentuk responsnya.
+	WAIT
 	
 	
 # 📌Pengimplementasian checklists dari tasks📌
