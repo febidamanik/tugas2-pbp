@@ -48,7 +48,7 @@ Berikut gambaran besar cara membuat `<form>` secara manual, yaitu:
 - Selanjutnya menambahkan tag <input> yang terdapat atribut `name="<nama-variable>"` sehingga diperoleh input berupa data dari user oleh views.py dengan memanggil perintah HTTP Request
 
 # 🔽Proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML🔽
-
+w a i t
 	
 	
 	
