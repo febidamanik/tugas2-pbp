@@ -19,26 +19,26 @@
         justify-content:center;
     }
     .card-body {
-            width:600px;
-            margin:20px auto;
-            padding:12px 60px;
-            background-color:#8fa5db;
-            border-radius: 10px;
-            align-content: center;
-            box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
-            backdrop-filter: blur(6px);
+        width:700px;
+        margin:20px auto;
+        padding:12px 60px;
+        background-color:#8fa5db;
+        border-radius: 10px;
+        align-content: center;
+        box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+        backdrop-filter: blur(6px);
     }
     .card {
-            margin:10px auto;
-            padding:12px 60px;
-            background-color:rgb(233, 243, 248);
-            border-radius: 10px;
-            box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
-            backdrop-filter: blur(6px);
+        margin:10px auto;
+        padding:12px 60px;
+        background-color:rgb(233, 243, 248);
+        border-radius: 10px;
+        box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+        backdrop-filter: blur(6px);
     }
     h1 {
-    padding: 10px;
-        font-size: large;
+        padding: 10px;
+        font-size: larger;
         font-family:'Secular One';
         text-align: center;
     }
@@ -118,15 +118,13 @@
             <p>➖COMPLETED➖</p>
             {% endif %}
                 <div class = "task-button">
-                    <a href="/todolist/update/{{task.id}}">
-                        <button class="button2" type="submit">Status🔄</button>
-                    </a>
-                    <a href="/todolist/delete/{{task.id}}">
-                        <button class="button2" type="submit">Remove❌</button>
-                    </a>
-                </div>
-        </div>  
+                <a href="/todolist/update/{{task.id}}">
+                    <button class="button2" type="submit">Status🔄</button>
+                </a>
+                <a href="/todolist/delete/{{task.id}}">
+                    <button class="button2" type="submit">Remove❌</button>
+                </a>
     </div>
-</div>     
-        {% endfor %}
+</div>
+{% endfor %}
 </html>
