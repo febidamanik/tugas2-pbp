@@ -41,7 +41,7 @@ Kelas 	: D
 Berbagai jenis serangan dapat terjadi di situs web salah satu serangan tersebut bernama Cross-Site Request Forgery yang sering disebut sebagai CSRF. Serangan ini dilakukan dengan menjalankan perintah yang seharusnya tidak diizinkan lewat berbagai aplikasi situs web atau lainnya sebagai medianya. Salah satu cara untuk mencegah serangan tersebut dengan menggunakan CSRF Token. CSRF Token adalah susunan acak berupa string dan unik yang dihasilkan setiap kali halaman formulir ditampilkan. Dengan CSRF Token, setiap form yang sudah disubmit akan disisipkan di dalam POST request sebagai header, atau form data, atau query string kemudian dari sisi backend dilakukan validasi apakah CSRF yang dikirim sepenuhnya valid atau tidak. Apabila tidak menggunakan csrf_token pada `<form>` maka penyerang dapat mengirim permintaan yang tidak diinginkan user sehingga fitur tersebut dapat dieksploitasi. 
 	
 # Apakah kita dapat membuat elemen <form> secara manual (tanpa menggunakan generator seperti {{ form.as_table }}) ❓
-Tentu saja pembuatan form dapat dilakukan secara manual. Django menyediakan berbagai cara untuk membuat elemen `<form>` tanpa harus menggunakan generator, seperti {{form.as_table}}). Bahkan, hanya dengan menggunakan fitur bawaan HTML form yang efektif dapat dibuat. 
+Tentu bisa, pembuatan form dapat dilakukan secara manual. Django menyediakan berbagai cara untuk membuat elemen `<form>` tanpa harus menggunakan generator, seperti {{form.as_table}}). Bahkan, hanya dengan menggunakan fitur bawaan HTML form yang efektif dapat dibuat. 
 	
 # ⚒Gambaran besar cara membuat <form> secara manual⚒
 Berikut gambaran besar cara membuat `<form>` secara manual, yaitu: 
@@ -52,11 +52,11 @@ Berikut gambaran besar cara membuat `<form>` secara manual, yaitu:
 # 🔽Proses alur data dari submisi yang dilakukan oleh pengguna melalui HTML form, penyimpanan data pada database, hingga munculnya data yang telah disimpan pada template HTML🔽
 - User memberikan input pada form HTML yang berdasarkan isian yang diminta oleh form.
 - Pada views.py terdapat fungsi yang akan menerima input user di HTML.
-- Dengan menggunakan perintah `request.POST.get("<name>")` akan disimpan dengan menyimpan ke dalam suatu variabel.
-- Dibuat object Task baru yang akan menyimpan variabel judul dan deskripsi kemudian disimpan ke dalam database kemudian dengan menggunakan perintah <object>.save()
-- Pada fungsi main, yaitu show_todolist akan didapatkan objek yang merupakan bagian dari objek Task sesuai dengan kepemilikan masing-masing.
-- Dengan menggunakan perintah `tasks = Task.objects.filter(user_id=user_id)` akan ddi hasil pemrosesan ke template HTML sebagai bentuk responsnya.
-- Terdapat iterasi dari pengimplementasian todolist pada template HTML yang kemudian akan ditampilkan sebagai satu kesatuan tabel yang dimana pengaturan HTML disesuaikan dengan format yang telah diinginkkan.
+- Dengan menggunakan perintah `request.POST.get("<name>")` , data inpu akan disimpan ke dalam suatu variabel.
+- Dibuat object Task baru yang akan menyimpan variabel judul dan deskripsi kemudian disimpan ke dalam database kemudian dengan menggunakan perintah <object>.save().
+- Dengan menggunakan perintah `tasks = Task.objects.filter(user_id=user_id)` pada fungsi main, yaitu show_todolist akan didapatkan objek yang merupakan bagian dari objek Task sesuai dengan kepemilikan masing-masing user.
+- Untuk menampilkan objek Task secara keseluruhan pada template HTML maka dijalankan dengan menggunakan perintah render.
+- Dilakukan iterasi pada todolist untuk menampilkan satu kesatuan tabel pada template HTML yang formatnya disesuaikan dengan format pengaturan HTML.
 	
 # 📌Pengimplementasian checklists dari tasks📌
 - Membuat django-app dengan 'startnewapp' diberi nama todolist dengan command berikut.
@@ -73,7 +73,7 @@ urlpatterns = [
 - Membuat task class serta atribut data `user`, `date`, `title`, `description`, dan `is_finished` 
 ```
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    date = models.DateField()
+    date = models.DateField() 
     title = models.CharField(max_length=150)
     description = models.TextField()
     is_finished = models.BooleanField(default=False)
@@ -124,9 +124,16 @@ plus
 ```	
 **◻Tambahan Implementasi Bonus◻**
 - Membuat dua akun pengguna beserta tiga dummy data menggunakan model Task di situs web dimana terdapat tambahan kolom untuk tombol yang akan melakukan behavior yang diinginkan, yaitu mengubah status serta tambahan kolom untuk menghapus suatu task.
+![image](https://user-images.githubusercontent.com/112416751/192825790-658c8b5b-7cce-4d2f-82be-b2a06fff59c7.png)
+![image](https://user-images.githubusercontent.com/112416751/192826306-86681ba8-99e4-4850-81fa-5b4065087915.png)
+
+- Memperbarui status penyelesaian task dan tombol pengubahan status pada todolist.html
 ```
-is_finished = models.BooleanField(default=False)
+<a href="/todolist/update/{{task.id}}">
+	<button class="button2" type="submit">Perbarui Status🔄</button>
+</a>
 ```
+<<<<<<< HEAD
 
 # 📑TUGAS-5 PBP📑
 
@@ -161,3 +168,13 @@ is_finished = models.BooleanField(default=False)
 # 📌Pengimplementasian checklists dari tasks📌
 
 
+=======
+- Menghapus suatu task todolist.html
+```
+<a href="/todolist/delete/{{task.id}}">
+	<button class="button2" type="submit">Hapus❌</button>
+</a>
+```
+
+ 
+>>>>>>> f189521229188d7f96a2f1a7b80d51d68e7083b0
