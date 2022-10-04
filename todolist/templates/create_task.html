@@ -1,3 +1,4 @@
+<html>
 {% extends 'base.html' %}
 
 {% block content %}
@@ -7,19 +8,19 @@
         scroll-behavior: smooth;
     }
     body{
-        background: #d2d9e9;
+        background: #000000;
     }
     .items {
         display: flex;
         justify-content: center;
     }
     .card-body {
-            width:300px;
+            width:250px;
             margin: 130px auto;
             padding:12px 60px;
-            background-color: transparent;
-            border-radius: 3px;
-            box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.50);
+            background-color: #d2d9e9;
+            border-radius: 10px;
+            box-shadow: 6px 2px 30px 0px rgba(177, 173, 173, 0.5);
             backdrop-filter: blur(6px);
     }
     tr {
@@ -67,7 +68,6 @@
     
 </style>
 <div class = "items">
-<div class = "login">
     <div class = "card-body">
     <h1 class="header_style">⌞Create Task⌝</h1>
     <br><hr><br>
@@ -86,6 +86,5 @@
     </form>
     </div>
 </div>
-</div>
-
 {% endblock content %}
+</html>
