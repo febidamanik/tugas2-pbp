@@ -133,7 +133,6 @@ plus
 	<button class="button2" type="submit">Perbarui Status🔄</button>
 </a>
 ```
-<<<<<<< HEAD
 
 # 📑TUGAS-5 PBP📑
 
