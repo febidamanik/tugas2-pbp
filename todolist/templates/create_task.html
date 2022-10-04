@@ -3,18 +3,21 @@
 {% block content %}
 
 <style>
-html {
-     scroll-behavior: smooth;
+    html {
+        scroll-behavior: smooth;
     }
-    
     body{
-        background: #f5f7ff;
- }
+        background: #d2d9e9;
+    }
+    .items {
+        display: flex;
+        justify-content: center;
+    }
     .card-body {
             width:300px;
             margin: 130px auto;
             padding:12px 60px;
-            background-color: transparent !important;;
+            background-color: transparent;
             border-radius: 3px;
             box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.50);
             backdrop-filter: blur(6px);
@@ -28,12 +31,8 @@ html {
         font-size: 14px;
     }
     h1 {
-        padding: 10px;
         font-family: 'Nunito', sans-serif;
-    }
-    a,p {
-        color: rgb(0, 0, 0);
-        font-family: 'Nunito', sans-serif;
+        text-align: center;
     }
     .button {
         border: 0px;
@@ -67,23 +66,26 @@ html {
     }
     
 </style>
+<div class = "items">
 <div class = "login">
     <div class = "card-body">
-    <h1 class="header_style">Tambah Task</h1>
-    <br><br><br><hr><br>
+    <h1 class="header_style">⌞Create Task⌝</h1>
+    <br><hr><br>
     <form method="POST" action="">
         {% csrf_token %}
         <div>
-            <label for="judul">Judul Task:</label>
-            <input id="judul" type="text" name="judul" placeholder="Masukkan Judul" required>
+            <label for="judul">Title:</label>
+            <input id="judul" type="text" name="judul" placeholder="Enter your task title" required>
         </div>
         <div>
-            <label for="deskripsi">Deskripsi Task: </label>
-            <input id="deskripsi" type="text" name="deskripsi" placeholder="Masukkan Deskripsi" required>
+            <label for="deskripsi">Description: </label>
+            <input id="deskripsi" type="text" name="deskripsi" placeholder="Enter your description" required>
         </div>
         <br><br>
-        <input class="button" type="submit" value="Tambah">
+        <input class="button" type="submit" value="Add Task">
     </form>
+    </div>
+</div>
 </div>
 
 {% endblock content %}

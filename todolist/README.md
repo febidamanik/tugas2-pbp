@@ -127,4 +127,37 @@ plus
 ```
 is_finished = models.BooleanField(default=False)
 ```
- 
+
+# 📑TUGAS-5 PBP📑
+
+**Tugas 5: Web Design Using HTML, CSS, and CSS Framework**
+
+# 📊Perbedaan dari Inline, Internal, dan External CSS📊
+
+
+
+# ⚖Kelebihan dan kekurangan dari masing-masing style⚖
+
+
+
+
+# 🔖Tag-tag pada HTML5 beserta penjelasannya🔖
+◽ `<header>` `</header>`
+↳ 
+◽ `<nav>` `</nav>`
+↳ 
+◽ `<aside>` `</aside>`
+↳ 
+◽ `<section>` `</section>`
+↳ 
+◽ `<article>` `</article>`
+↳ 
+◽ `<footer>` `</footer>`
+↳ 
+
+
+# ⚜Tipe-tipe CSS selector⚜
+
+# 📌Pengimplementasian checklists dari tasks📌
+
+
