@@ -325,7 +325,7 @@ Dengan penambahan class card, maka setiap penambahan task satu card akan mengand
 ```
 **◻Tambahan Implementasi Bonus◻**
 		   
-◽ ☑ Menambahkan efek ketika melakukan hover pada cards di halaman utama todolist	
+◽ ☑ Menambahkan efek ketika melakukan _hover_ pada _cards_ di halaman utama _todolist_.	
 - Dengan penambahan class untuk hover pada kode CSS dengan menambahkan insisialisasi `:hover`.
 ```html
     }
