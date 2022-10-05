@@ -220,48 +220,31 @@ Berikut penjelasan serta kelebihan dan kekurangan dari masing-masing ketiga cara
 	- Memerlukan loading time tertentu untuk mengakses styling yang digunakan file dari CSS saat menampilkan laman website
 	
 # 🔖Tag-tag pada HTML5 beserta penjelasannya🔖
-◽ `<main>` `</main>`
+◽ `<main>` `</main>` → Menyajikan bagian konten utama dari halaman
 	
-↳ Menyajikan bagian konten utama dari halaman
+◽ `<header>` `</header>` → Menyajikan bagian header dari halaman sebagai konten pengantar
 	
-◽ `<header>` `</header>`
+◽ `<dialog>` `<dialog>` → Menyajikan kotak dialog
 	
-↳ Menyajikan bagian header dari halaman sebagai konten pengantar
+◽ `<canvas>` `</canvas>` → Menyisipkan area untuk grafik, image, dan teks
 	
-◽ `<dialog>` `<dialog>`
+◽ `<nav>` `</nav>` → Menyajikan link menu navigasi
 	
-↳ Menyajikan kotak dialog
+◽ `<aside>` `</aside>` → Menyajikan konten pelengkap pada artikel utama
 	
-◽ `<canvas>` `</canvas>`
+◽ `<section>` `</section>` → Menyajikan sebuah bagian dokumen/aplikasi
 	
-↳ Menyisipkan area untuk grafik, image, dan teks
+◽ `<article>` `</article>` → Menyajikan konten yang bersifat _stand alone_
 	
-◽ `<nav>` `</nav>`
+◽ `<footer>` `</footer>` → Menyajikan bagian footer pada halaman
 	
-↳ Menyajikan link menu navigasi
-	
-◽ `<aside>` `</aside>`
-	
-↳ Menyajikan konten pelengkap pada artikel utama
-	
-◽ `<section>` `</section>`
-	
-↳ Menyajikan sebuah bagian dokumen/aplikasi
-	
-◽ `<article>` `</article>`
-	
-↳ Menyajikan konten yang bersifat _stand alone_
-	
-◽ `<footer>` `</footer>`
-	
-↳ Menyajikan bagian footer pada halaman
-	
-◽ `<menuitem>` `</menuitem>`
-	
-↳ Mendefinisikan list command yang dapat dipilih pengguna
+◽ `<menuitem>` `</menuitem>` → Mendefinisikan list command yang dapat dipilih pengguna
 
 # ⚜Tipe-tipe CSS selector⚜
-1. ID Selectors, menggunakan ID 
+	1. ID Selectors, menggunakan ID 
+	
+	
+	
 	
 # 📌Pengimplementasian checklists dari tasks📌
 
