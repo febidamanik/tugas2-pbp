@@ -133,6 +133,12 @@ plus
 	<button class="button2" type="submit">Perbarui Status🔄</button>
 </a>
 ```
+- Menghapus suatu task todolist.html
+```
+<a href="/todolist/delete/{{task.id}}">
+	<button class="button2" type="submit">Hapus❌</button>
+</a>
+```
 
 # 📑TUGAS-5 PBP📑
 
@@ -167,13 +173,4 @@ plus
 # 📌Pengimplementasian checklists dari tasks📌
 
 
-=======
-- Menghapus suatu task todolist.html
-```
-<a href="/todolist/delete/{{task.id}}">
-	<button class="button2" type="submit">Hapus❌</button>
-</a>
-```
-
  
->>>>>>> f189521229188d7f96a2f1a7b80d51d68e7083b0
