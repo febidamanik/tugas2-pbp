@@ -242,21 +242,21 @@ Berikut penjelasan serta kelebihan dan kekurangan dari masing-masing ketiga cara
 
 # ⚜Tipe-tipe CSS Selector⚜
 Berdasarkan urutan prioritasnya CSS Selector dibedakan menjadi :
-	2. ID Selectors, menggunakan ID pada tag selector-nya diawali dengan tanda pagar `#` atau hash. 
-	Contoh : 
+	
+	1. ID Selectors, menggunakan ID pada tag selector-nya diawali dengan tanda pagar `#` atau hash.  
 	```html
 	#header {
 	color: white
 	}
 	```
-	3. Classes Selectors, menggunakan class pada tag sebagai selector-nya dibuat dengan tanda titik `.` di depannya.
+	2. Classes Selectors, menggunakan class pada tag sebagai selector-nya dibuat dengan tanda titik `.` di depannya.
 	```html
 	    .button {
         border: 0px;
         background-color: #778cc0;
         padding: 10px;
     }
-	4. Element Selector, menggunakan HTML pada tag sebagai selector-nya untuk mengubah atau memodifikasi style yang berada dalam tag tersebut.
+	3. Element Selector, menggunakan HTML pada tag sebagai selector-nya untuk mengubah atau memodifikasi style yang berada dalam tag tersebut.
 
 
 	
