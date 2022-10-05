@@ -170,9 +170,8 @@ Contoh :
 	</style>
 	</head>
 	```
-
+	
 	Pengaplikasian pada tag HTML
-
 	```html
 	<body>
 	<p>Mengerjakan tugas-5 pbp itu menyenangkan</p>
