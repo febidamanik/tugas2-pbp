@@ -179,7 +179,7 @@ Contoh :
 	```
 - **3️⃣ External style sheet (separated file)**
 
-Dengan penggunaan External CSS, kita akan menambahkan kode pada file berekstensi .css terpisah dari HTML. Pada setiap laman HTML, harus menyertakan referensi ke file css tersebut di dalam tag `<link rel>`, di dalam `<head>` serta mengalokasikan file css pada folder yang sama dengan HTML. 
+Dengan penggunaan External CSS, kita akan menambahkan kode pada file berekstensi .css terpisah dari HTML. Pada setiap laman HTML, harus menyertakan referensi ke file css tersebut di dalam tag `<link rel>`, di dalam `<head>` beserta mengalokasikan file css pada folder yang sama dengan HTML. 
 
 Contoh	: 
 ```
@@ -189,7 +189,7 @@ Contoh	:
 ```
 
 # ⚖Kelebihan dan kekurangan dari setiap style⚖
-Berikut penjelasan serta kelebihan dan kekurangan dari ketiga style tersebut, yaitu :
+Berikut penjelasan beserta kelebihan dan kekurangan dari ketiga style tersebut, yaitu :
 - **1️⃣ Inline CSS (inline tag of HTML)**
 
 🔆Kelebihan🔆	:
@@ -290,9 +290,9 @@ Berikut langkah-langkah dalam pengimplementasian checklist di atas :
         <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
     </head>
 ```
-- Langkah terakhir, membuat keempat halaman yang dikustomisasi menjadi _responsive_. Dengan emasukkan tag meta viewport pada bagian head dari file HTML maka tag ini akan menginstruksikan browser untuk mengontrol dimensi serta skala pada laman website.
+- Langkah terakhir, membuat keempat halaman yang dikustomisasi menjadi _responsive_. Dengan memasukkan tag meta viewport pada bagian head dari file HTML maka tag ini akan menginstruksikan browser untuk mengontrol dimensi beserta skala pada laman website.
 - Dengan menambahkan `content="width=device-width` maka lebar laman website akan disesuaikan dengan perangkat yang digunakan oleh pengguna sehingga konten sesuai yang ditampilkan sesuai dengan ukuran layar.
-- Memberikan instruksi pada browser untuk mempertahankan ukuran CSS _pixels_ dan _device-independent pixels_ dengan ratio 1:1. 
+- Memberikan instruksi pada browser untuk mempertahankan ukuran CSS _pixels_ dan _device-independent pixels_ dengan rasio 1:1. 
 
 Referensi dalam pengimplementasian Responsive Design : 
 
@@ -300,8 +300,8 @@ https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design#
 	
 Pada folder templates tepatnya di file base.html untuk Tugas-2 PBP sudah tersedia tag meta viewport yang dimana pada aplikasi _todolist_ pada tiap file-nya sudah terdapat `{% extends 'base.html' %}`. Untuk itu, sebagai tambahan dalam mengatur tampilan ukuran konten pada viewport saya menambahkan class selector, yaitu `.items {}`.
 
-◽ ☑ Kustomisasi halaman utama _todo list_ menggunakan _cards_.
-Berikut langkah-langkah dalam pengimplementasian checklist di atas :
+◽ ☑ Kustomisasi halaman utama _todolist_ menggunakan _cards_.
+Berikut langkah-langkah dalam mengimplementasikan _checklists_ di atas :
 - Pada file HTML todolist saya membuat class `.card` 
 ```html
     .card {
@@ -313,7 +313,7 @@ Berikut langkah-langkah dalam pengimplementasian checklist di atas :
         backdrop-filter: blur(6px);
     }
 ```
-Dengan penambahan class card, maka setiap penambahan task satu card akan mengandung satu task begitu pula seterusnya dengan memanfaatkan _looping_ pada task di HTML.
+Dengan penambahan class _card_, maka setiap penambahan task satu _card_ akan mengandung satu task begitu pula seterusnya dengan memanfaatkan _looping_ pada task di HTML.
 ```html
             {% for task in todolist %}
             <div class="card">
@@ -329,7 +329,7 @@ Dengan penambahan class card, maka setiap penambahan task satu card akan mengand
 **◻Tambahan Implementasi Bonus◻**
 		   
 ◽ ☑ Menambahkan efek ketika melakukan _hover_ pada _cards_ di halaman utama _todolist_.	
-- Dengan penambahan class untuk hover pada kode CSS dengan menambahkan insisialisasi `:hover`.
+- Dengan penambahan class untuk hover pada kode CSS dengan menambahkan inisialisasi `:hover`.
 ```html
     }
     .card:hover {
