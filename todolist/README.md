@@ -214,30 +214,39 @@ Berikut penjelasan serta kelebihan dan kekurangan dari masing-masing ketiga cara
 ◽ `<main>` `</main>`
 	
 ↳ Menyajikan bagian konten utama dari halaman
+	
 ◽ `<header>` `</header>`
 	
 ↳ Menyajikan bagian header dari halaman sebagai konten pengantar
+	
 ◽ `<dialog>` `<dialog>`
 	
 ↳ Menyajikan kotak dialog
+	
 ◽ `<canvas>` `</canvas>`
 	
 ↳ Menyisipkan area untuk grafik, image, dan teks
+	
 ◽ `<nav>` `</nav>`
 	
 ↳ Menyajikan link menu navigasi
+	
 ◽ `<aside>` `</aside>`
 	
 ↳ Menyajikan konten pelengkap pada artikel utama
+	
 ◽ `<section>` `</section>`
 	
 ↳ Menyajikan sebuah bagian dokumen/aplikasi
+	
 ◽ `<article>` `</article>`
 	
 ↳ Menyajikan konten yang bersifat _stand alone_
+	
 ◽ `<footer>` `</footer>`
 	
 ↳ Menyajikan bagian footer pada halaman
+	
 ◽ `<menuitem>` `</menuitem>`
 	
 ↳ Mendefinisikan list command yang dapat dipilih pengguna
