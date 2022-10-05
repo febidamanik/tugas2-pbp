@@ -176,7 +176,7 @@ Contoh :
 - **3️⃣ External style sheet (separated file)**
 Dengan penggunaan External CSS, kita akan menambahkan kode pada file berekstensi .css terpisah dari HTML. Pada setiap laman HTML, harus menyertakan referensi ke file css tersebut di dalam tag `<link rel>`, di dalam `<head>` serta mengalokasikan file css pada folder yang sama dengan HTML. 
 Contoh	: 
-```
+```html
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
@@ -233,7 +233,7 @@ Berikut penjelasan serta kelebihan dan kekurangan dari masing-masing ketiga cara
 ↳ Mendefinisikan list command yang dapat dipilih pengguna
 
 # ⚜Tipe-tipe CSS selector⚜
-
+1. ID Selectors, menggunakan ID 
 	
 # 📌Pengimplementasian checklists dari tasks📌
 
