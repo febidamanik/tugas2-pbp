@@ -152,7 +152,7 @@ Terdapat 3 (tiga)  cara untuk menambahkan CSS ke dalam file HTML dari website.
 Dengan penggunaan Inline CSS, kita menambahkan atribut `style` ke tag HTML tertentu dimana akan mengubah satu elemen saja. 
 
 Contoh : 
-	```html
+	```
 	 <h1 style="color:white;padding:10px;">Tugas-5 PBP</h1>
 	```
 - **2️⃣ Internal CSS (inside HTML)**
@@ -160,7 +160,7 @@ Contoh :
 Dengan penggunaan Internal CSS, kita akan menambahkan deklarasi kode CSS ke dalam tag `<style>`, di dalam `head` HTML. Dapat menggunakan ID, class, atau elemen untuk merujuk pada kode CSS.
 
 Contoh :
-	```html
+	```
 	<head>
 	<style>
 	p{
@@ -182,7 +182,7 @@ Contoh :
 Dengan penggunaan External CSS, kita akan menambahkan kode pada file berekstensi .css terpisah dari HTML. Pada setiap laman HTML, harus menyertakan referensi ke file css tersebut di dalam tag `<link rel>`, di dalam `<head>` serta mengalokasikan file css pada folder yang sama dengan HTML. 
 
 Contoh	: 
-```html
+```
 <head>
   <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
