@@ -170,6 +170,7 @@ Contoh :
 	</style>
 	</head>
 	```
+
 	Pengaplikasian pada tag HTML
 
 	```html
@@ -180,6 +181,7 @@ Contoh :
 - **3️⃣ External style sheet (separated file)**
 
 Dengan penggunaan External CSS, kita akan menambahkan kode pada file berekstensi .css terpisah dari HTML. Pada setiap laman HTML, harus menyertakan referensi ke file css tersebut di dalam tag `<link rel>`, di dalam `<head>` serta mengalokasikan file css pada folder yang sama dengan HTML. 
+
 Contoh	: 
 ```html
 <head>
@@ -222,7 +224,7 @@ Berikut penjelasan serta kelebihan dan kekurangan dari ketiga style tersebut, ya
 	- Lebih efisien karena file css dapat digunakan berulang untuk laman website yang berbeda
 ♨Kekurangan♨ 	:
 
-	- Memerlukan loading time tertentu untuk mengakses styling yang digunakan file dari CSS saat menampilkan laman website
+	- Memerlukan loading time untuk mengakses styling yang digunakan file dari CSS saat menampilkan laman website
 	
 # 🔖Tag pada HTML5🔖
 ◽ `<main>` `</main>` → Menyajikan bagian konten utama dari halaman
