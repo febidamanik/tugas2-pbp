@@ -105,36 +105,37 @@
 </style>
 <div class="items">
     <div class="card-body">
-    <h1>꧁Welcome, {{username}}!🙋‍♀️꧂</h1>
-    <h2>⌞TO-DO LIST📜⌝</h2>
-        <a href="{% url 'todolist:create_task' %}">
-            <p><button class="button1">➕Add Task</button></p>
-        </a>
+        <h1>꧁Welcome, {{username}}!🙋‍♀️꧂</h1>
+        <h2>⌞TO-DO LIST📜⌝</h2>
+            <a href="{% url 'todolist:create_task' %}">
+                <p><button class="button1">➕Add Task</button></p>
+            </a>
 
-        <a href="{% url 'todolist:logout_user' %}">
-            <p><button class="button1">🔴Logout</button></p>
-        </a>
-        {% for task in todolist %}
-        <div class="card">
-            <h4><b>┃{{task.title}}┃</b></h4>
-            <p>📅{{task.date}}</p>
-            <p>✍Description ➜ {{task.description}}</p>
-            {% if task.is_finished == False %}
-            <p>➖NOT COMPLETED➖</p> 
-            {% else %} 
-            <p>➖COMPLETED➖</p>
-            {% endif %} 
-                <div class = "task-button">
-                <a href="/todolist/update/{{task.id}}">
-                    <button class="button2" type="submit">Status🔄</button>
-                </a>
-                <a href="/todolist/delete/{{task.id}}">
-                    <button class="button2" type="submit">Remove❌</button>
-                </a>
-                </div>
+            <a href="{% url 'todolist:logout_user' %}">
+                <p><button class="button1">🔴Logout</button></p>
+            </a>
+            
+            {% for task in todolist %}
+            <div class="card">
+                <h4><b>┃{{task.title}}┃</b></h4>
+                <p>📅{{task.date}}</p>
+                <p>✍Description ➜ {{task.description}}</p>
+                {% if task.is_finished == False %}
+                <p>➖NOT COMPLETED➖</p> 
+                {% else %} 
+                <p>➖COMPLETED➖</p>
+                {% endif %} 
+                    <div class = "task-button">
+                        <a href="/todolist/update/{{task.id}}">
+                            <button class="button2" type="submit">Status🔄</button>
+                        </a>
+                        <a href="/todolist/delete/{{task.id}}">
+                            <button class="button2" type="submit">Remove❌</button>
+                        </a>
+                    </div>
+            </div>
+            {% endfor %} 
+    </div>
 </div>
-</div>
-</div>
-{% endfor %} 
 {% endblock content %}
 </html>
