@@ -230,7 +230,7 @@ Berikut penjelasan serta kelebihan dan kekurangan dari ketiga style tersebut, ya
 	
 ◽ `<header>` `</header>` → Menyajikan bagian header dari halaman sebagai konten pengantar
 	
-◽ `<dialog>` `<dialog>` → Menyajikan kotak dialog
+◽ `<dialog>` `</dialog>` → Menyajikan kotak dialog
 	
 ◽ `<canvas>` `</canvas>` → Menyisipkan area untuk grafik, image, dan teks
 	
