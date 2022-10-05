@@ -256,6 +256,7 @@ border: 0px;
 background-color: #778cc0;
 padding: 10px;
 }
+```
 3. Element Selector, menggunakan HTML pada tag sebagai selector-nya untuk mengubah atau memodifikasi style yang berada dalam tag tersebut.
 
 # 📌Pengimplementasian checklists dari tasks📌
