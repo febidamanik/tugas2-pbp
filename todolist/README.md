@@ -219,7 +219,7 @@ Berikut penjelasan serta kelebihan dan kekurangan dari masing-masing ketiga cara
 
 	- Memerlukan loading time tertentu untuk mengakses styling yang digunakan file dari CSS saat menampilkan laman website
 	
-# 🔖Tag-tag pada HTML5🔖
+# 🔖Tag pada HTML5🔖
 ◽ `<main>` `</main>` → Menyajikan bagian konten utama dari halaman
 	
 ◽ `<header>` `</header>` → Menyajikan bagian header dari halaman sebagai konten pengantar
