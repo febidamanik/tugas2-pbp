@@ -278,9 +278,9 @@ font-size: 15px;
 ◽ ☑ Kustomisasi template untuk halaman _login_, _register_, dan _create-task_ semenarik mungkin.
 Pada tugas-5, saya melakukan kustomisasi template dengan menggunakan Internal CSS (inside HTML).
 Berikut langkah-langkah dalam pengimplementasian checklist di atas :
-- Menambahkan deklarasi kode CSS ke dalam tag `<style>`, di dalam `head` HTML di tiap file HTML login, registration, todolist, create_task pada folder templates.
-- Pada setiap file saya menginisialisasi class dan element styling untuk memperindah tampilan laman website, contohnya pada menu login berupa elemen tr, td, dan sebagainya.
-- Dalam kustomisasi ini, saya juga melakukan import font yang tersedia di Google Fonts dengan menginisialisasi URL pada file HTML todolist
+- Menambahkan deklarasi kode CSS ke dalam tag `<style>`, di dalam `head` HTML di tiap file HTML _login_, _registration_, _todolist_, _create_task_ pada folder templates.
+- Pada setiap file saya menginisialisasi class dan element _styling_ untuk memperindah tampilan laman website, contohnya pada menu login berupa elemen tr, td, dan sebagainya.
+- Dalam kustomisasi ini, saya juga melakukan import font yang tersedia di Google Fonts dengan menginisialisasi URL pada file HTML _todolist_
 ```html
     <head>
         <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -298,7 +298,7 @@ Referensi dalam pengimplementasian Responsive Design :
 
 https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design#the_viewport_meta_tag
 	
-Pada folder templates tepatnya di file base.html untuk Tugas-2 PBP sudah tersedia tag meta viewport yang dimana pada aplikasi todolist pada tiap file-nya sudah terdapat `{% extends 'base.html' %}`. Untuk itu, sebagai tambahan dalam mengatur tampilan ukuran konten pada viewport saya menambahkan class selector, yaitu `.items {}`.
+Pada folder templates tepatnya di file base.html untuk Tugas-2 PBP sudah tersedia tag meta viewport yang dimana pada aplikasi _todolist_ pada tiap file-nya sudah terdapat `{% extends 'base.html' %}`. Untuk itu, sebagai tambahan dalam mengatur tampilan ukuran konten pada viewport saya menambahkan class selector, yaitu `.items {}`.
 
 ◽ ☑ Kustomisasi halaman utama _todo list_ menggunakan _cards_.
 Berikut langkah-langkah dalam pengimplementasian checklist di atas :
@@ -313,7 +313,7 @@ Berikut langkah-langkah dalam pengimplementasian checklist di atas :
         backdrop-filter: blur(6px);
     }
 ```
-Dengan penambahan class card, maka setiap penambahan task satu card akan mengandung satu task begitu pula seterusnya dengan memanfaatkan looping pada task di HTML.
+Dengan penambahan class card, maka setiap penambahan task satu card akan mengandung satu task begitu pula seterusnya dengan memanfaatkan _looping_ pada task di HTML.
 ```html
             {% for task in todolist %}
             <div class="card">
