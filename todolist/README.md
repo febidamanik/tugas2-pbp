@@ -256,15 +256,15 @@ font-color: white
 font-size: 14px;
 font-weight: bold;
 }
-```html
-2. Classes Selectors, menggunakan class pada tag sebagai selector-nya dibuat dengan tanda titik `.` di depannya.
 ```
+2. Classes Selectors, menggunakan class pada tag sebagai selector-nya dibuat dengan tanda titik `.` di depannya.
+```html
 	.button {
 border: 0px;
 background-color: #778cc0;
 padding: 10px;
 }
-```html
+```
 3. Element Selector, menggunakan HTML pada tag sebagai selector-nya untuk mengubah atau memodifikasi style yang berada dalam tag tersebut.
 ```html
     td{
