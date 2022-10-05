@@ -235,7 +235,7 @@ Berikut penjelasan serta kelebihan dan kekurangan dari ketiga style tersebut, ya
 	
 ◽ `<aside>` `</aside>` → Menyajikan konten pelengkap pada artikel utama
 	
-◽ `<section>` `</section>` → Menyajikan sebuah bagian dokumen/aplikasi
+◽ `<section>` `</section>` → Menyajikan suatu bagian dokumen/aplikasi
 	
 ◽ `<article>` `</article>` → Menyajikan konten yang bersifat _stand alone_
 	
