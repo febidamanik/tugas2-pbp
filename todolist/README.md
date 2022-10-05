@@ -185,6 +185,7 @@ Contoh	:
 # ⚖Kelebihan dan kekurangan dari masing-masing style⚖
 Berikut penjelasan serta kelebihan dan kekurangan dari masing-masing ketiga cara tersebut, yaitu :
 - **1️⃣ Inline CSS (inline tag of HTML)**
+
 🔆Kelebihan🔆	:
 	- Mudah melakukan modifikasi atau perbaikan
 	- Memiliki proses permintaan HTTP yang relatif kecil
@@ -195,6 +196,7 @@ Berikut penjelasan serta kelebihan dan kekurangan dari masing-masing ketiga cara
 	- Kurang terstruktur apabila menggunakan banyak styling pada file HTML
 	
 - **2️⃣ Internal CSS (inside HTML)**
+
 🔆Kelebihan🔆	:
 	- Mudah untuk mengatur laman web dengan tampilan yang unik
 	- Tidak perlu membuat file CSS terpisah karena dapat secara langsung oleh tag `<head>` `</head>` dan diawali dengan tag `<style>`
@@ -204,6 +206,7 @@ Berikut penjelasan serta kelebihan dan kekurangan dari masing-masing ketiga cara
 	- Kurang efektif karena memerlukan loading time yang cukup lama pada website
 
 - **3️⃣ External style sheet (separated file)**
+
 🔆Kelebihan🔆	:
 	- Kode HTML lebih terstruktur dan rapi
 	- Lebih efisien karena file css dapat digunakan berulang untuk laman website yang berbeda
