@@ -220,25 +220,25 @@ Berikut penjelasan serta kelebihan dan kekurangan dari masing-masing ketiga cara
 	- Memerlukan loading time tertentu untuk mengakses styling yang digunakan file dari CSS saat menampilkan laman website
 	
 # 🔖Tag-tag pada HTML5 beserta penjelasannya🔖
-◽ `<main>` `</main>`		→ Menyajikan bagian konten utama dari halaman
+◽ `<main>` `</main>` → Menyajikan bagian konten utama dari halaman
 	
-◽ `<header>` `</header>` 	→ Menyajikan bagian header dari halaman sebagai konten pengantar
+◽ `<header>` `</header>` → Menyajikan bagian header dari halaman sebagai konten pengantar
 	
-◽ `<dialog>` `<dialog>` 	→ Menyajikan kotak dialog
+◽ `<dialog>` `<dialog>` → Menyajikan kotak dialog
 	
-◽ `<canvas>` `</canvas>` 	→ Menyisipkan area untuk grafik, image, dan teks
+◽ `<canvas>` `</canvas>` → Menyisipkan area untuk grafik, image, dan teks
 	
-◽ `<nav>` `</nav>` 		→ Menyajikan link menu navigasi
+◽ `<nav>` `</nav>` → Menyajikan link menu navigasi
 	
-◽ `<aside>` `</aside>` 		→ Menyajikan konten pelengkap pada artikel utama
+◽ `<aside>` `</aside>` → Menyajikan konten pelengkap pada artikel utama
 	
-◽ `<section>` `</section>` 	→ Menyajikan sebuah bagian dokumen/aplikasi
+◽ `<section>` `</section>` → Menyajikan sebuah bagian dokumen/aplikasi
 	
-◽ `<article>` `</article>` 	→ Menyajikan konten yang bersifat _stand alone_
+◽ `<article>` `</article>` → Menyajikan konten yang bersifat _stand alone_
 	
-◽ `<footer>` `</footer>` 	→ Menyajikan bagian footer pada halaman
+◽ `<footer>` `</footer>` → Menyajikan bagian footer pada halaman
 	
-◽ `<menuitem>` `</menuitem>`	→ Mendefinisikan list command yang dapat dipilih pengguna
+◽ `<menuitem>` `</menuitem>` → Mendefinisikan list command yang dapat dipilih pengguna
 
 # ⚜Tipe-tipe CSS selector⚜
 	1. ID Selectors, menggunakan ID 
