@@ -182,8 +182,8 @@ Contoh	:
 </head>
 ```
 
-# ⚖Kelebihan dan kekurangan dari masing-masing style⚖
-Berikut penjelasan serta kelebihan dan kekurangan dari masing-masing ketiga cara tersebut, yaitu :
+# ⚖Kelebihan dan kekurangan dari setiap style⚖
+Berikut penjelasan serta kelebihan dan kekurangan dari ketiga style tersebut, yaitu :
 - **1️⃣ Inline CSS (inline tag of HTML)**
 
 🔆Kelebihan🔆	:
