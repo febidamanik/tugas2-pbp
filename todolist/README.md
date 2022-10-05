@@ -294,7 +294,6 @@ Berikut langkah-langkah dalam pengimplementasian checklist di atas :
 - Dengan menambahkan `content="width=device-width` maka lebar laman website akan disesuaikan dengan perangkat yang digunakan oleh pengguna sehingga konten sesuai yang ditampilkan sesuai dengan ukuran layar.
 - Memberikan instruksi pada browser untuk mempertahankan ukuran CSS _pixels_ dan _device-independent pixels_ dengan ratio 1:1. 
 
-
 Referensi dalam pengimplementasian Responsive Design : 
 
 https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design#the_viewport_meta_tag
