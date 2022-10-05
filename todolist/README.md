@@ -245,13 +245,15 @@ Berdasarkan urutan prioritasnya CSS Selector dibedakan menjadi :
 	
 1. ID Selectors, menggunakan ID pada tag selector-nya diawali dengan tanda pagar `#` atau hash.  
 ```
-#header {
-color: white
+	#header {
+font-color: white
+font-size: 14px;
+font-weight: bold;
 }
 ```
 2. Classes Selectors, menggunakan class pada tag sebagai selector-nya dibuat dengan tanda titik `.` di depannya.
 ```
-    .button {
+	.button {
 border: 0px;
 background-color: #778cc0;
 padding: 10px;
