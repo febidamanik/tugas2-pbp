@@ -172,7 +172,7 @@ Contoh :
 	```
 	
 	Pengaplikasian pada tag HTML
-	```html
+	```
 	<body>
 	<p>Mengerjakan tugas-5 pbp itu menyenangkan</p>
 	</body>
@@ -324,6 +324,7 @@ Dengan penambahan class card, maka setiap penambahan task satu card akan mengand
                 {% endif %} 
 ```
 **◻Tambahan Implementasi Bonus◻**
+		   
 ◽ ☑ Menambahkan efek ketika melakukan hover pada cards di halaman utama todolist	
 - Dengan penambahan class untuk hover pada kode CSS dengan menambahkan insisialisasi `:hover`.
 ```html
