@@ -139,37 +139,102 @@ plus
 	<button class="button2" type="submit">Hapus❌</button>
 </a>
 ```
+=========================================================================================
 
 # 📑TUGAS-5 PBP📑
 
 **Tugas 5: Web Design Using HTML, CSS, and CSS Framework**
 
-# 📊Perbedaan dari Inline, Internal, dan External CSS📊
+# 📊Inline, Internal, dan External CSS📊
+Terdapat 3 (tiga)  cara untuk menambahkan CSS ke dalam file HTML dari website. 
+- **1️⃣ Inline CSS (inline tag of HTML)**
+Dengan penggunaan Inline CSS, kita menambahkan atribut `style` ke tag HTML tertentu dimana akan mengubah satu elemen saja. 
+Contoh : 
+	```
+	 <h1 style="color:white;padding:10px;">Tugas-5 PBP</h1>
+	```
+- **2️⃣ Internal CSS (inside HTML)**
+Dengan penggunaan Internal CSS, kita akan menambahkan deklarasi kode CSS ke dalam tag `<style>`, di dalam `head` HTML. Dapat menggunakan ID, class, atau elemen untuk merujuk pada kode CSS.
+Contoh :
+	```
+	<head>
+	<style>
+	p{
+        font-family: 'Acme';
+        font-size:small;
+        line-height: 12%;
+	</style>
+	</head>
+	```
+	Pengaplikasian pada tag HTML
 
-
+	```
+	<body>
+	<p>Mengerjakan tugas-5 pbp itu menyenangkan</p>
+	</body>
+	```
+- **3️⃣ External style sheet (separated file)**
+Dengan penggunaan External CSS, kita akan menambahkan kode pada file berekstensi .css terpisah dari HTML. Pada setiap laman HTML, harus menyertakan referensi ke file css tersebut di dalam tag `<link rel>`, di dalam `<head>` serta mengalokasikan file css pada folder yang sama dengan HTML. 
+Contoh	: 
+```
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+```
 
 # ⚖Kelebihan dan kekurangan dari masing-masing style⚖
+Berikut penjelasan serta kelebihan dan kekurangan dari masing-masing ketiga cara tersebut, yaitu :
+- **1️⃣ Inline CSS (inline tag of HTML)**
+🔆Kelebihan🔆	:
+	- Mudah melakukan modifikasi atau perbaikan
+	- Memiliki proses permintaan HTTP yang relatif kecil
+	- Tidak perlu membuat file CSS terpisah karena dapat secara langsung ditambahkan ke tag HTML
 
+♨Kekurangan♨ 	:
+	- Kurang efisien karena harus diimplementasikan pada setiap elemen
+	- Kurang terstruktur apabila menggunakan banyak styling pada file HTML
+	
+- **2️⃣ Internal CSS (inside HTML)**
+🔆Kelebihan🔆	:
+	- Mudah untuk mengatur laman web dengan tampilan yang unik
+	- Tidak perlu membuat file CSS terpisah karena dapat secara langsung oleh tag `<head>` `</head>` dan diawali dengan tag `<style>`
 
+♨Kekurangan♨ 	:
+	- Kurang efisien karena apabila menggunakan CSS yang sama harus mendeklarasikan tag dalam beberapa file
+	- Kurang efektif karena memerlukan loading time yang cukup lama pada website
 
-
+- **3️⃣ External style sheet (separated file)**
+🔆Kelebihan🔆	:
+	- Kode HTML lebih terstruktur dan rapi
+	- Lebih efisien karena file css dapat digunakan berulang untuk laman website yang berbeda
+♨Kekurangan♨ 	:
+	- Memerlukan loading time tertentu untuk mengakses styling yang digunakan file dari CSS saat menampilkan laman website
+	
 # 🔖Tag-tag pada HTML5 beserta penjelasannya🔖
+◽ `<main>` `</main>`
+↳ Menyajikan bagian konten utama dari halaman
 ◽ `<header>` `</header>`
-↳ 
+↳ Menyajikan bagian header dari halaman sebagai konten pengantar
+◽ `<dialog>` `<dialog>`
+↳ Menyajikan kotak dialog
+◽ `<canvas>` `</canvas>`
+↳ Menyisipkan area untuk grafik, image, dan teks
 ◽ `<nav>` `</nav>`
-↳ 
+↳ Menyajikan link menu navigasi
 ◽ `<aside>` `</aside>`
-↳ 
+↳ Menyajikan konten pelengkap pada artikel utama
 ◽ `<section>` `</section>`
-↳ 
+↳ Menyajikan sebuah bagian dokumen/aplikasi
 ◽ `<article>` `</article>`
-↳ 
+↳ Menyajikan konten yang bersifat _stand alone_
 ◽ `<footer>` `</footer>`
-↳ 
-
+↳ Menyajikan bagian footer pada halaman
+◽ `<menuitem>` `</menuitem>`
+↳ Mendefinisikan list command yang dapat dipilih pengguna
 
 # ⚜Tipe-tipe CSS selector⚜
 
+	
 # 📌Pengimplementasian checklists dari tasks📌
 
 
