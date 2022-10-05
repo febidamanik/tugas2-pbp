@@ -265,7 +265,7 @@ background-color: #778cc0;
 padding: 10px;
 }
 ```
-3. Element Selector, menggunakan HTML pada tag sebagai selector-nya untuk mengubah atau memodifikasi style yang berada dalam tag tersebut.
+3. Element Selectors, menggunakan HTML pada tag sebagai selector-nya untuk mengubah atau memodifikasi style yang berada dalam tag tersebut.
 ```html
     td{
 padding-left: 8px;
@@ -295,6 +295,7 @@ Berikut langkah-langkah dalam pengimplementasian checklist di atas :
 - Memberikan instruksi pada browser untuk mempertahankan ukuran CSS _pixels_ dan _device-independent pixels_ dengan ratio 1:1. 
 
 Referensi dalam pengimplementasian Responsive Design : 
+
 https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design#the_viewport_meta_tag
 	
 Pada folder templates tepatnya di file base.html untuk Tugas-2 PBP sudah tersedia tag meta viewport yang dimana pada aplikasi todolist pada tiap file-nya sudah terdapat `{% extends 'base.html' %}`. Untuk itu, sebagai tambahan dalam mengatur tampilan ukuran konten pada viewport saya menambahkan class selector, yaitu `.items {}`.
