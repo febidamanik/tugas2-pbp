@@ -244,13 +244,13 @@ Berikut penjelasan serta kelebihan dan kekurangan dari masing-masing ketiga cara
 Berdasarkan urutan prioritasnya CSS Selector dibedakan menjadi :
 	
 1. ID Selectors, menggunakan ID pada tag selector-nya diawali dengan tanda pagar `#` atau hash.  
-```
+```html
 	#header {
 font-color: white
 font-size: 14px;
 font-weight: bold;
 }
-```
+```html
 2. Classes Selectors, menggunakan class pada tag sebagai selector-nya dibuat dengan tanda titik `.` di depannya.
 ```
 	.button {
@@ -258,10 +258,72 @@ border: 0px;
 background-color: #778cc0;
 padding: 10px;
 }
-```
+```html
 3. Element Selector, menggunakan HTML pada tag sebagai selector-nya untuk mengubah atau memodifikasi style yang berada dalam tag tersebut.
-
+```html
+    td{
+padding-left: 8px;
+font-family: Tahoma, sans-serif;
+font-size: 15px;
+    }
+```
+	
 # 📌Pengimplementasian checklists dari tasks📌
+◽ ☑ Kustomisasi template untuk halaman login, register, dan create-task semenarik mungkin
+Pada tugas-5, saya melakukan kustomisasi template dengan menggunakan Internal CSS (inside HTML).
+Berikut langkah-langkah dalam pengimplementasian checklist di atas :
+- Menambahkan deklarasi kode CSS ke dalam tag `<style>`, di dalam `head` HTML di tiap file HTML login, registration, todolist, create_task pada folder templates.
+- Pada setiap file saya menginisialisasi class dan element styling untuk memperindah tampilan laman website, contohnya pada menu login berupa elemen tr, td, dan sebagainya.
+- Dalam kustomisasi ini, saya juga melakukan import font yang tersedia di Google Fonts dengan menginisialisasi URL pada file HTML todolist
+```html
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Secular One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alkalami" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    </head>
+```
+- Langkah terakhir, membuat keempat halaman yang dikustomisasi menjadi _responsive_. Dengan emasukkan tag meta viewport pada bagian head dari file HTML maka tag ini akan menginstruksikan browser untuk mengontrol dimensi serta skala pada laman website.
+- Dengan menambahkan `content="width=device-width` maka lebar laman website akan disesuaikan dengan perangkat yang digunakan oleh pengguna sehingga konten sesuai yang ditampilkan sesuai dengan ukuran layar.
+- Memberikan instruksi pada browser untuk mempertahankan ukuran CSS _pixels_ dan _device-independent pixels_ dengan ratio 1:1. 
+Referensi dalam pengimplementasian Responsive Design : https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design#the_viewport_meta_tag
+	
+Pada folder templates tepatnya di file base.html untuk Tugas-2 PBP sudah tersedia tag meta viewport yang dimana pada aplikasi todolist pada tiap file-nya sudah terdapat `{% extends 'base.html' %}`. Untuk itu, sebagai tambahan dalam mengatur tampilan ukuran konten pada viewport saya menambahkan class selector, yaitu `.items {}`.
 
-
- 
+◽ ☑ Kustomisasi halaman utama _todo list_ menggunakan _cards_.
+Berikut langkah-langkah dalam pengimplementasian checklist di atas :
+- Pada file HTML todolist saya membuat class `.card` 
+```html
+    .card {
+        margin:10px auto;
+        padding:12px 60px;
+        background-color:rgb(233, 243, 248);
+        border-radius: 10px;
+        box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+        backdrop-filter: blur(6px);
+    }
+```
+Dengan penambahan class card, maka setiap penambahan task satu card akan mengandung satu task begitu pula seterusnya dengan memanfaatkan looping pada task di HTML.
+```html
+            {% for task in todolist %}
+            <div class="card">
+                <h4><b>┃{{task.title}}┃</b></h4>
+                <p>📅{{task.date}}</p>
+                <p>✍Description ➜ {{task.description}}</p>
+                {% if task.is_finished == False %}
+                <p>➖NOT COMPLETED➖</p> 
+                {% else %} 
+                <p>➖COMPLETED➖</p>
+                {% endif %} 
+```
+**◻Tambahan Implementasi Bonus◻**
+◽ ☑ Menambahkan efek ketika melakukan hover pada cards di halaman utama todolist	
+- Dengan penambahan class untuk hover pada kode CSS dengan menambahkan insisialisasi `:hover`.
+```html
+    }
+    .card:hover {
+        box-shadow: 6px 2px 20px 0px #aebbdd;
+        background-color: rgb(232, 236, 251);
+    }		   	    
+```		  
