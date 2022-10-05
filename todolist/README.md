@@ -275,7 +275,7 @@ font-size: 15px;
 ```
 	
 # 📌Pengimplementasian checklists dari tasks📌
-◽ ☑ Kustomisasi template untuk halaman _login_, _register_, dan _create-task_ semenarik mungkin
+◽ ☑ Kustomisasi template untuk halaman _login_, _register_, dan _create-task_ semenarik mungkin.
 Pada tugas-5, saya melakukan kustomisasi template dengan menggunakan Internal CSS (inside HTML).
 Berikut langkah-langkah dalam pengimplementasian checklist di atas :
 - Menambahkan deklarasi kode CSS ke dalam tag `<style>`, di dalam `head` HTML di tiap file HTML login, registration, todolist, create_task pada folder templates.
