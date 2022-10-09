@@ -133,47 +133,207 @@ plus
 	<button class="button2" type="submit">Perbarui Status🔄</button>
 </a>
 ```
-
-# 📑TUGAS-5 PBP📑
-
-**Tugas 5: Web Design Using HTML, CSS, and CSS Framework**
-
-# 📊Perbedaan dari Inline, Internal, dan External CSS📊
-
-
-
-# ⚖Kelebihan dan kekurangan dari masing-masing style⚖
-
-
-
-
-# 🔖Tag-tag pada HTML5 beserta penjelasannya🔖
-◽ `<header>` `</header>`
-↳ 
-◽ `<nav>` `</nav>`
-↳ 
-◽ `<aside>` `</aside>`
-↳ 
-◽ `<section>` `</section>`
-↳ 
-◽ `<article>` `</article>`
-↳ 
-◽ `<footer>` `</footer>`
-↳ 
-
-
-# ⚜Tipe-tipe CSS selector⚜
-
-# 📌Pengimplementasian checklists dari tasks📌
-
-
-=======
 - Menghapus suatu task todolist.html
 ```
 <a href="/todolist/delete/{{task.id}}">
 	<button class="button2" type="submit">Hapus❌</button>
 </a>
 ```
+=========================================================================================
 
- 
->>>>>>> f189521229188d7f96a2f1a7b80d51d68e7083b0
+# 📑TUGAS-5 PBP📑
+
+**Tugas 5: Web Design Using HTML, CSS, and CSS Framework**
+
+# 📊Inline, Internal, dan External CSS📊
+Terdapat 3 (tiga)  cara untuk menambahkan CSS ke dalam file HTML dari website. 
+- **1️⃣ Inline CSS (inline tag of HTML)**
+
+Dengan penggunaan Inline CSS, kita menambahkan atribut `style` ke tag HTML tertentu dimana akan mengubah satu elemen saja. 
+
+Contoh : 
+	```
+	 <h1 style="color:white;padding:10px;">Tugas-5 PBP</h1>
+	```
+- **2️⃣ Internal CSS (inside HTML)**
+
+Dengan penggunaan Internal CSS, kita akan menambahkan deklarasi kode CSS ke dalam tag `<style>`, di dalam `head` HTML. Dapat menggunakan ID, class, atau elemen untuk merujuk pada kode CSS.
+
+Contoh :
+	```
+	<head>
+	<style>
+	p{
+        font-family: 'Acme';
+        font-size:small;
+        line-height: 12%;
+	</style>
+	</head>
+	```
+	
+	Pengaplikasian pada tag HTML
+	```
+	<body>
+	<p>Mengerjakan tugas-5 pbp itu menyenangkan</p>
+	</body>
+	```
+- **3️⃣ External style sheet (separated file)**
+
+Dengan penggunaan External CSS, kita akan menambahkan kode pada file berekstensi .css terpisah dari HTML. Pada setiap laman HTML, harus menyertakan referensi ke file css tersebut di dalam tag `<link rel>`, di dalam `<head>` beserta mengalokasikan file css pada folder yang sama dengan HTML. 
+
+Contoh	: 
+```
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+```
+
+# ⚖Kelebihan dan kekurangan dari setiap style⚖
+Berikut penjelasan beserta kelebihan dan kekurangan dari ketiga style tersebut, yaitu :
+- **1️⃣ Inline CSS (inline tag of HTML)**
+
+🔆Kelebihan🔆	:
+
+	- Mudah melakukan modifikasi atau perbaikan
+	- Memiliki proses permintaan HTTP yang relatif kecil
+	- Tidak perlu membuat file CSS terpisah karena dapat secara langsung ditambahkan ke tag HTML
+
+♨Kekurangan♨ 	:
+
+	- Kurang efisien karena harus diimplementasikan pada setiap elemen
+	- Kurang terstruktur apabila menggunakan banyak styling pada file HTML
+	
+- **2️⃣ Internal CSS (inside HTML)**
+
+🔆Kelebihan🔆	:
+
+	- Mudah untuk mengatur laman web dengan tampilan yang unik
+	- Tidak perlu membuat file CSS terpisah karena dapat secara langsung oleh tag `<head>` `</head>` dan diawali dengan tag `<style>`
+
+♨Kekurangan♨ 	:
+
+	- Kurang efisien karena apabila menggunakan CSS yang sama harus mendeklarasikan tag dalam beberapa file
+	- Kurang efektif karena memerlukan loading time yang cukup lama pada website
+
+- **3️⃣ External style sheet (separated file)**
+
+🔆Kelebihan🔆	:
+
+	- Kode HTML lebih terstruktur dan rapi
+	- Lebih efisien karena file css dapat digunakan berulang untuk laman website yang berbeda
+♨Kekurangan♨ 	:
+
+	- Memerlukan loading time untuk mengakses styling yang digunakan file dari CSS saat menampilkan laman website
+	
+# 🔖Tag pada HTML5🔖
+◽ `<main>` `</main>` → Menyajikan bagian konten utama dari halaman
+	
+◽ `<header>` `</header>` → Menyajikan bagian header dari halaman sebagai konten pengantar
+	
+◽ `<dialog>` `</dialog>` → Menyajikan kotak dialog
+	
+◽ `<canvas>` `</canvas>` → Menyisipkan area untuk grafik, image, dan teks
+	
+◽ `<nav>` `</nav>` → Menyajikan link menu navigasi
+	
+◽ `<aside>` `</aside>` → Menyajikan konten pelengkap pada artikel utama
+	
+◽ `<section>` `</section>` → Menyajikan suatu bagian dokumen/aplikasi
+	
+◽ `<article>` `</article>` → Menyajikan konten yang bersifat _stand alone_
+	
+◽ `<footer>` `</footer>` → Menyajikan bagian footer pada halaman
+	
+◽ `<menuitem>` `</menuitem>` → Mendefinisikan list command yang dapat dipilih pengguna
+
+# ⚜Tipe-tipe CSS Selector⚜
+Berdasarkan urutan prioritasnya CSS Selector dibedakan menjadi :
+	
+1. ID Selectors, menggunakan ID pada tag selector-nya diawali dengan tanda pagar `#` atau hash.  
+```html
+	#header {
+font-color: white
+font-size: 14px;
+font-weight: bold;
+}
+```
+2. Classes Selectors, menggunakan class pada tag sebagai selector-nya dibuat dengan tanda titik `.` di depannya.
+```html
+	.button {
+border: 0px;
+background-color: #778cc0;
+padding: 10px;
+}
+```
+3. Element Selectors, menggunakan HTML pada tag sebagai selector-nya untuk mengubah atau memodifikasi style yang berada dalam tag tersebut.
+```html
+    td{
+padding-left: 8px;
+font-family: Tahoma, sans-serif;
+font-size: 15px;
+    }
+```
+	
+# 📌Pengimplementasian checklists dari tasks📌
+◽ ☑ Kustomisasi template untuk halaman _login_, _register_, dan _create-task_ semenarik mungkin.
+Pada tugas-5, saya melakukan kustomisasi template dengan menggunakan Internal CSS (inside HTML).
+Berikut langkah-langkah dalam pengimplementasian checklist di atas :
+- Menambahkan deklarasi kode CSS ke dalam tag `<style>`, di dalam `head` HTML di tiap file HTML _login_, _registration_, _todolist_, _create_task_ pada folder templates.
+- Pada setiap file saya menginisialisasi class dan element _styling_ untuk memperindah tampilan laman website, contohnya pada menu login berupa elemen tr, td, dan sebagainya.
+- Dalam kustomisasi ini, saya juga melakukan import font yang tersedia di Google Fonts dengan menginisialisasi URL pada file HTML _todolist_
+```html
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css?family=Secular One" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alkalami" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    </head>
+```
+- Langkah terakhir, membuat keempat halaman yang dikustomisasi menjadi _responsive_. Dengan memasukkan tag meta viewport pada bagian head dari file HTML maka tag ini akan menginstruksikan browser untuk mengontrol dimensi beserta skala pada laman website.
+- Dengan menambahkan `content="width=device-width` maka lebar laman website akan disesuaikan dengan perangkat yang digunakan oleh pengguna sehingga konten sesuai yang ditampilkan sesuai dengan ukuran layar.
+- Memberikan instruksi pada browser untuk mempertahankan ukuran CSS _pixels_ dan _device-independent pixels_ dengan rasio 1:1. 
+
+Referensi dalam pengimplementasian Responsive Design : 
+
+https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design#the_viewport_meta_tag
+	
+Pada folder templates tepatnya di file base.html untuk Tugas-2 PBP sudah tersedia tag meta viewport yang dimana pada aplikasi _todolist_ pada tiap file-nya sudah terdapat `{% extends 'base.html' %}`. Untuk itu, sebagai tambahan dalam mengatur tampilan ukuran konten pada viewport saya menambahkan class selector, yaitu `.items {}`.
+
+◽ ☑ Kustomisasi halaman utama _todolist_ menggunakan _cards_.
+Berikut langkah-langkah dalam mengimplementasikan _checklists_ di atas :
+- Pada file HTML todolist saya membuat class `.card` 
+```html
+    .card {
+        margin:10px auto;
+        padding:12px 60px;
+        background-color:rgb(233, 243, 248);
+        border-radius: 10px;
+        box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+        backdrop-filter: blur(6px);
+    }
+```
+Dengan penambahan class _card_, maka setiap penambahan task satu _card_ akan mengandung satu task begitu pula seterusnya dengan memanfaatkan _looping_ pada task di HTML.
+```html
+            {% for task in todolist %}
+            <div class="card">
+                <h4><b>┃{{task.title}}┃</b></h4>
+                <p>📅{{task.date}}</p>
+                <p>✍Description ➜ {{task.description}}</p>
+                {% if task.is_finished == False %}
+                <p>➖NOT COMPLETED➖</p> 
+                {% else %} 
+                <p>➖COMPLETED➖</p>
+                {% endif %} 
+```
+**◻Tambahan Implementasi Bonus◻**
+		   
+◽ ☑ Menambahkan efek ketika melakukan _hover_ pada _cards_ di halaman utama _todolist_.	
+- Dengan penambahan class untuk hover pada kode CSS dengan menambahkan inisialisasi `:hover`.
+```html
+    }
+    .card:hover {
+        box-shadow: 6px 2px 20px 0px #aebbdd;
+        background-color: rgb(232, 236, 251);
+    }		   	    
+```		  
