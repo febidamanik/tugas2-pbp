@@ -108,6 +108,7 @@ def show_json(request):
 ◻Tambahan Implementasi Bonus◻
 
 ◽ ☑ Mengimplementasikan AJAX DELETE untuk setiap button delete pada card dengan fungsi `deleteData(id){}` pada file todolist untuk memanggil `endpoint` dari penghapusan task
+
 ◽ ☑ Membuat view baru dengan menghapus task sesuai dengan ID tertentu
 
 ◽ ☑ Membuat kolom baru pada task dengan tombol Hapus
