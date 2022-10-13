@@ -16,11 +16,11 @@ Metode asynchronous programming dan synchronous programming merupakan suatu meto
 
 Asynchronous programming
 
-➔ Pendekatan pemrograman yang tidak terikat pada input/output (I/O). Program dapat berjalan secara paralel tanpa adanya `blocking` sehingga dapat mengirim `multiple request` ke server. 
+➔ Pendekatan pemrograman yang tidak terikat pada input/output (I/O). Program dapat berjalan secara paralel tanpa adanya *blocking* sehingga dapat mengirim *multiple request* ke server. 
 
 Synchronus programming
 
-➔ Pendekatan pemrograman yang lebih `old style`. Program hanya dapat mengeksekusi baris program satu per satu sesuai dengan urutan dan prioritas task.
+➔ Pendekatan pemrograman yang lebih *old style*. Program hanya dapat mengeksekusi baris program satu per satu sesuai dengan urutan dan prioritas task.
 
 Berikut tabel yang menampilkan perbedaan antara keduanya.
 <!DOCTYPE html>
