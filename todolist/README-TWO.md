@@ -8,6 +8,9 @@ NPM	: 2106751884
 
 Kelas 	: D
 
+# 🔗Link🔗
+https://tugas2-pbp-febidamanik.herokuapp.com/todolist/
+
 # 🔎Asynchronous programming VS Synchronous programming🔎
 Metode asynchronous programming dan synchronous programming merupakan suatu metode yang digunakan dalam konteks programming yang memiliki perbedaan serta keunggulan dan kekurangannya masing-masing.
 
