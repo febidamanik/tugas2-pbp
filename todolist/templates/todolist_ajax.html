@@ -1,0 +1,257 @@
+<html>
+{% extends 'base.html' %}
+
+{% block meta %}
+<title>My Todolist</title>
+<head> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<style>
+    html {
+     scroll-behavior:smooth;
+    }
+    
+    body{
+        background: #000000;
+    }
+    .items {
+        display: flex;
+        justify-content: center;
+    }
+    .card-body {
+        width:700px;
+        margin:20px auto;
+        padding:12px 60px;
+        background-color:#8fa5db;
+        border-radius: 10px;
+        align-content: center;
+        box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+        backdrop-filter: blur(6px);
+    }
+    .card {
+        margin:10px auto;
+        padding:12px 60px;
+        background-color:rgb(233, 243, 248);
+        border-radius: 10px;
+        box-shadow: 6px 2px 30px 0px rgba(0,0,0,0.75);
+        backdrop-filter: blur(6px);
+    }
+    h1 {
+        padding: 10px;
+        font-size: large;
+        font-family:'Secular One';
+        text-align: center;
+    }
+    h2 {
+        padding: 10px;
+        line-height: 10%;
+        text-align: center;
+        font-family:'Alkalami';
+        font-size: x-large;
+    }
+    h4 {
+        font-family:'Acme';
+    }
+    a {
+        color: #e5e6ea;
+        font-family: 'Nunito', sans-serif;
+    }
+    .card:hover {
+        box-shadow: 6px 2px 20px 0px #aebbdd;
+        background-color: rgb(232, 236, 251);
+    }
+    .task-button {
+        display:flex;
+        position: relative;
+        justify-content: left;
+    }
+    p {
+        font-family: 'Acme';
+        font-size:small;
+        line-height: 12%;
+    }
+    .button1 {
+            border: 0px;
+            background-color: #778cc0;
+            padding: 10px;
+            font-family: 'Nunito', sans-serif;
+            font-size: 14px;
+            border-radius: 6px;
+            color: rgb(255, 254, 254);
+            font-weight: bold;
+            cursor: pointer;
+            width: 120px;
+            margin-right: 100px;
+            box-shadow: 3px 1px 10px 0px rgba(0,0,0,0.30);
+    }
+    .button2 {
+        border: 0px;
+        background-color: #778cc0;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        margin-right: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        box-shadow: 3px 1px 10px 0px rgba(0,0,0,0.30);
+    }
+</style>
+{% endblock meta %}
+
+{% block content %}
+<body>
+    <script>
+        function getData(){
+          $.get('/todolist/json/', function(data){
+            showData(data);
+          })
+        };
+        
+        function showData(data){
+            if (data.length == 0){
+                let msg = `<div class="msg text-center">
+                            <div class="header2_style">is an EMPTY TO DO LIST EVER POSSIBLE?🤔</div>
+                            </div>`;
+                document.getElementById('task-cards').innerHTML = msg;
+            } else {
+                let card = '';
+                for (let task of data){
+                if (task.fields.is_finished){
+                    card += `
+                            <div class="card">
+                                <h4><b>┃${task.fields.title}┃</b></h4>
+                                <p>📅{{task.date}}</p>
+                                <p>✍Description ➜ ${task.fields.description}<</p>
+                                <p>➖COMPLETED➖</p>
+                                <div class = "task-button">
+                                    <a href="/todolist/update-status/${task.pk}"><button class="button2" type="submit">Status🔄</button></a>
+                                    <a href="/todolist/delete-task/${task.pk}"><button class="button2" type="submit">Remove❌</button></a>
+                                </div>
+                            </div>`;
+                } else{
+                    card += `
+                            <div class="card">
+                                <h4><b>┃${task.fields.title}┃</b></h4>
+                                <p>📅{{task.date}}</p>
+                                <p>✍Description ➜ ${task.fields.description}<</p>
+                                <p>➖NOT-COMPLETED➖</p>
+                                <div class = "task-button"> 
+                                    <a href="/todolist/update-status/${task.pk}"><button class="button2" type="submit" role="button">Status🔄</button></a>
+                                    <a href="/todolist/delete-task/${task.pk}"><button class="button2" type="submit" onclick="deleteData(${task.pk} role="button")>Remove❌</button></a>
+                                </div>
+                            </div>`;
+                } 
+                };
+                document.getElementById('task-cards').innerHTML = card;
+            };  
+        };
+            
+        function resetForm(){
+        $("#new-task")[0].reset();
+        }
+        
+        function deleteTask(id){
+        $.ajax({
+            type: 'DELETE',
+            url: '/todolist/delete-task/' + id,
+            dataType: 'json',
+            headers: {
+                "X-CSRFTOKEN": "{{ csrf_token }}"
+            },
+            success: function(data){
+            console.log("Berhasil dihapus");
+            getData();
+            }
+        })
+        }
+        
+        $(document).ready(function(){
+        getData();
+        $("button").click(function (){
+            getData();
+        });
+        });
+    
+        $(document).on('submit', '#new-task', function(e){
+        e.preventDefault();
+        $.ajax({
+            type: 'POST',
+            url: '/todolist/add/',
+            data: {
+            title: $('#title').val(),
+            description: $('#description').val(),
+            csrfmiddlewaretoken:$('input[name=csrfmiddlewaretoken]').val(),
+            action:'post',
+            },
+            dataType: 'json',
+            success: function(data){
+            console.log("Berhasil membuat task");
+            getData();
+            $('#add-new-task').modal('hide');
+            $('.modal-backdrop').remove();
+            resetForm()
+            }
+        })
+        })
+    </script>
+
+    <nav class="navbar navbar-expand-sm mb-3 p-2" style="background-color: #FFFF;">
+        <div class="container-fluid" >
+            <span class="navbar-brand m-2 h-1 fw-bold">
+                <ul class="navbar-nav ml-auto">
+                    <li><button type="button" class="button3" data-bs-toggle="modal" data-bs-target="#add-new-task">Add Task</button></li>
+                    <li><a class="button4" href="{% url 'todolist:logout' %}" role="button">Logout</a></li>
+                </ul>
+            </span>
+        </div>
+    </nav>
+
+    <div class="modal fade" id="add-new-task" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 style="color:black" class="header_style4" id="staticBackdropLabel"> Add New Task </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" onclick="resetForm()"></button>
+                </div>
+                <div class="modal-body">
+                    <form method="POST" action="" id="new-task">
+                        {% csrf_token %}
+                        <div class="m-3 p-1">
+                            <label for="input" class="form-label h5">Title:</label>
+                            <input type="text" name="title" class="form-control" id="title" placeholder="Task title" required>
+                        </div>
+                        <div class="m-3 p-1">
+                            <label for="input" class="form-label h5">Description:</label>
+                            <input type="text" name="description" class="form-control" id="description" placeholder="Task description" rows="5">
+                        </div>
+                        <div class="modal-footer">
+                        <div class="task-button">
+                            <a><button type="button" class="button3" data-bs-dismiss="modal" onclick="resetForm()">Discard</button></a>
+                            <a><button type="submit" class="button2">Add Task</button></a>
+                        </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="card-body">
+            <h1>꧁Welcome, {{username}}!🙋‍♀️꧂</h1>
+            <h2>⌞📜TO-DO LIST📜⌝</h2>
+            <div id="task-cards"></div> </div> </div> 
+            {% if messages %}
+                {% for message in messages %}
+                <div class="alert alert-primary alert-dismissible fade show mx-4" role="alert">
+                    {{message}}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+            {% endif %}
+
+</body>
+{% endblock content %}
+ </html>
