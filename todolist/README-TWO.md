@@ -99,7 +99,7 @@ def show_json(request):
 
 ◽ Menambahkan `path('add/', create_task_ajax, name='create-task-ajax')` pada `urlpatterns = []` di urls.py
 
-◽ Membuat fungsi `clearFields()` pada tag `<script>` di todolist.html untuk menghapus isi dari fields pada modal.
+◽ Membuat fungsi `clearFields()` pada tag `<script>` di todolist_ajax.html untuk menghapus isi dari fields pada modal.
 
 ◽ Melakukan refresh pada halaman utama secara asinkronus untuk menampilkan list terbaru tanpa reload seluruh halaman
 
