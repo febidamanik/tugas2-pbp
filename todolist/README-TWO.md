@@ -1,6 +1,6 @@
 # 📑TUGAS-6 PBP📑
 
-**Tugas 6: Javascript dan AJAX**
+**Tugas 6 : Javascript dan AJAX**
 
 Nama	: Febi Claudia Damanik
 
