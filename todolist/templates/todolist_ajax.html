@@ -2,11 +2,16 @@
 {% extends 'base.html' %}
 
 {% block meta %}
+
 <title>My Todolist</title>
 <head> 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Secular One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alkalami" rel="stylesheet">
 </head>
 <style>
     html {
@@ -56,7 +61,7 @@
     }
     a {
         color: #e5e6ea;
-        font-family: 'Nunito', sans-serif;
+        font-family: 'Secular One';
     }
     .card:hover {
         box-shadow: 6px 2px 20px 0px #aebbdd;
@@ -66,6 +71,7 @@
         display:flex;
         position: relative;
         justify-content: left;
+        font-family: 'Secular One';
     }
     p {
         font-family: 'Acme';
@@ -80,6 +86,7 @@
             font-size: 14px;
             border-radius: 6px;
             color: rgb(255, 254, 254);
+            font-family: 'Secular One';
             font-weight: bold;
             cursor: pointer;
             width: 120px;
@@ -92,6 +99,19 @@
         padding: 10px;
         font-size: 14px;
         font-weight: bold;
+        font-family: 'Secular One';
+        margin-right: 10px;
+        border-radius: 6px;
+        cursor: pointer;
+        box-shadow: 3px 1px 10px 0px rgba(0,0,0,0.30);
+    }
+    .button3 {
+        border: 0px;
+        background-color: #6680bf;
+        padding: 10px;
+        font-size: 14px;
+        font-weight: bold;
+        font-family: 'Secular One';
         margin-right: 10px;
         border-radius: 6px;
         cursor: pointer;
@@ -99,7 +119,6 @@
     }
 </style>
 {% endblock meta %}
-
 {% block content %}
 <body>
     <script>
@@ -108,12 +127,11 @@
             showData(data);
           })
         };
-        
         function showData(data){
             if (data.length == 0){
                 let msg = `<div class="msg text-center">
-                            <div class="header2_style">is an EMPTY TO DO LIST EVER POSSIBLE?🤔</div>
-                            </div>`;
+                <a>is an EMPTY TO DO LIST EVER POSSIBLE?🤔</a>
+                </div>`;
                 document.getElementById('task-cards').innerHTML = msg;
             } else {
                 let card = '';
@@ -122,7 +140,7 @@
                     card += `
                             <div class="card">
                                 <h4><b>┃${task.fields.title}┃</b></h4>
-                                <p>📅{{task.date}}</p>
+                                <p>📅${task.fields.date}</p>
                                 <p>✍Description ➜ ${task.fields.description}<</p>
                                 <p>➖COMPLETED➖</p>
                                 <div class = "task-button">
@@ -134,7 +152,7 @@
                     card += `
                             <div class="card">
                                 <h4><b>┃${task.fields.title}┃</b></h4>
-                                <p>📅{{task.date}}</p>
+                                <p>📅${task.fields.date}</p>
                                 <p>✍Description ➜ ${task.fields.description}<</p>
                                 <p>➖NOT-COMPLETED➖</p>
                                 <div class = "task-button"> 
@@ -147,7 +165,6 @@
                 document.getElementById('task-cards').innerHTML = card;
             };  
         };
-            
         function resetForm(){
         $("#new-task")[0].reset();
         }
@@ -166,14 +183,12 @@
             }
         })
         }
-        
         $(document).ready(function(){
         getData();
         $("button").click(function (){
             getData();
         });
         });
-    
         $(document).on('submit', '#new-task', function(e){
         e.preventDefault();
         $.ajax({
@@ -201,13 +216,12 @@
         <div class="container-fluid" >
             <span class="navbar-brand m-2 h-1 fw-bold">
                 <ul class="navbar-nav ml-auto">
-                    <li><button type="button" class="button3" data-bs-toggle="modal" data-bs-target="#add-new-task">Add Task</button></li>
-                    <li><a class="button4" href="{% url 'todolist:logout' %}" role="button">Logout</a></li>
+                    <li><button type="button" class="button3" data-bs-toggle="modal" data-bs-target="#add-new-task">➕Add Task</button></li>
+                    <li><a class="button3" href="{% url 'todolist:logout' %}" role="button">🔴Logout</a></li>
                 </ul>
             </span>
         </div>
     </nav>
-
     <div class="modal fade" id="add-new-task" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -237,7 +251,6 @@
             </div>
         </div>
     </div>
-
     <div class="container">
         <div class="card-body">
             <h1>꧁Welcome, {{username}}!🙋‍♀️꧂</h1>
